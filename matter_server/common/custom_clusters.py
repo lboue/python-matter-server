@@ -211,6 +211,85 @@ class EveCluster(Cluster, CustomClusterMixin):
             value: float32 = 0
 
 
+@dataclass
+class WeatherStationCluster(Cluster):
+
+    id: ClassVar[int] = 0xFFF1FEDC
+
+    @ChipUtility.classproperty
+    def descriptor(cls) -> ClusterObjectDescriptor:
+        return ClusterObjectDescriptor(
+            Fields=[
+                ClusterObjectFieldDescriptor(
+                    Label="windspeed", Tag=0x0000, Type=float32
+                ),
+                ClusterObjectFieldDescriptor(
+                    Label="winddirection", Tag=0x0001, Type=float32
+                ),
+                ClusterObjectFieldDescriptor(
+                    Label="rainfall", Tag=0x0002, Type=float32
+                ),
+            ]
+        )
+
+    windspeed: float32 | None = None
+    winddirection: float32 | None = None
+    rainfall: float32 | None = None
+
+    class Attributes:
+
+        @dataclass
+        class WindSpeed(ClusterAttributeDescriptor):
+
+            @ChipUtility.classproperty
+            def cluster_id(cls) -> int:
+                return 0xFFF1FEDC
+
+            @ChipUtility.classproperty
+            def attribute_id(cls) -> int:
+                return 0x0000
+
+            @ChipUtility.classproperty
+            def attribute_type(cls) -> ClusterObjectFieldDescriptor:
+                return ClusterObjectFieldDescriptor(Type=float32)
+
+            value: float32 = 0
+
+        @dataclass
+        class WindDirection(ClusterAttributeDescriptor):
+
+            @ChipUtility.classproperty
+            def cluster_id(cls) -> int:
+                return 0xFFF1FEDC
+
+            @ChipUtility.classproperty
+            def attribute_id(cls) -> int:
+                return 0x0001
+
+            @ChipUtility.classproperty
+            def attribute_type(cls) -> ClusterObjectFieldDescriptor:
+                return ClusterObjectFieldDescriptor(Type=float32)
+
+            value: float32 = 0
+
+        @dataclass
+        class Rainfall(ClusterAttributeDescriptor):
+
+            @ChipUtility.classproperty
+            def cluster_id(cls) -> int:
+                return 0xFFF1FEDC
+
+            @ChipUtility.classproperty
+            def attribute_id(cls) -> int:
+                return 0x0002
+
+            @ChipUtility.classproperty
+            def attribute_type(cls) -> ClusterObjectFieldDescriptor:
+                return ClusterObjectFieldDescriptor(Type=float32)
+
+            value: float32 = 0
+
+
 def check_polled_attributes(node_data: MatterNodeData) -> set[str]:
     """Check if custom attributes are present in the node data that need to be polled."""
     attributes_to_poll: set[str] = set()
