@@ -26,9 +26,9 @@ export const device_types: Record<number, DeviceType> = {
     "id": 4293984257,
     "label": "Orphan Clusters",
     "clusters": [
-      28,
       66,
       67,
+      28,
       68
     ]
   },
@@ -70,69 +70,69 @@ export const device_types: Record<number, DeviceType> = {
     "id": 1296,
     "label": "Electrical Sensor",
     "clusters": [
-      29,
       144,
       145,
-      156
+      156,
+      29
     ]
   },
   "18": {
     "id": 18,
     "label": "OTA Requestor",
     "clusters": [
-      29,
-      42
+      42,
+      29
     ]
   },
   "20": {
     "id": 20,
     "label": "OTA Provider",
     "clusters": [
-      29,
-      41
+      41,
+      29
     ]
   },
   "14": {
     "id": 14,
     "label": "Aggregator",
     "clusters": [
-      29,
-      37
+      37,
+      29
     ]
   },
   "19": {
     "id": 19,
     "label": "Bridged Node",
     "clusters": [
+      57,
       29,
       46,
-      47,
-      57
+      47
     ]
   },
   "256": {
     "id": 256,
     "label": "On/Off Light",
     "clusters": [
+      98,
       3,
       4,
       6,
       8,
-      29,
-      98
+      29
     ]
   },
   "257": {
     "id": 257,
     "label": "Dimmable Light",
     "clusters": [
+      98,
       3,
       4,
       6,
       8,
       29,
-      30,
-      98
+      30
     ]
   },
   "268": {
@@ -185,19 +185,55 @@ export const device_types: Record<number, DeviceType> = {
       29
     ]
   },
+  "271": {
+    "id": 271,
+    "label": "Mounted On/Off Control",
+    "clusters": [
+      98,
+      3,
+      4,
+      6,
+      8
+    ]
+  },
+  "272": {
+    "id": 272,
+    "label": "Mounted Dimmable Load Control",
+    "clusters": [
+      98,
+      3,
+      4,
+      6,
+      8
+    ]
+  },
+  "322": {
+    "id": 322,
+    "label": "Camera",
+    "clusters": [
+      2049,
+      1030,
+      1360,
+      1361,
+      1362,
+      1363,
+      1365,
+      56
+    ]
+  },
   "771": {
     "id": 771,
     "label": "Pump",
     "clusters": [
       512,
-      98,
-      1027,
-      1028,
-      3,
       1026,
+      3,
       4,
-      8,
+      1028,
       6,
+      1027,
+      8,
+      98,
       29,
       30
     ]
@@ -262,9 +298,9 @@ export const device_types: Record<number, DeviceType> = {
     "id": 21,
     "label": "Contact Sensor",
     "clusters": [
+      29,
       3,
-      69,
-      29
+      69
     ]
   },
   "262": {
@@ -283,8 +319,8 @@ export const device_types: Record<number, DeviceType> = {
     "clusters": [
       3,
       29,
-      30,
-      1030
+      1030,
+      30
     ]
   },
   "770": {
@@ -300,8 +336,8 @@ export const device_types: Record<number, DeviceType> = {
     "id": 773,
     "label": "Pressure Sensor",
     "clusters": [
-      1027,
       3,
+      1027,
       29
     ]
   },
@@ -318,9 +354,9 @@ export const device_types: Record<number, DeviceType> = {
     "id": 775,
     "label": "Humidity Sensor",
     "clusters": [
-      1029,
+      29,
       3,
-      29
+      1029
     ]
   },
   "2128": {
@@ -374,10 +410,10 @@ export const device_types: Record<number, DeviceType> = {
     "id": 768,
     "label": "Heating/Cooling Unit",
     "clusters": [
-      98,
-      3,
       514,
+      3,
       4,
+      98,
       6,
       8,
       29,
@@ -388,14 +424,14 @@ export const device_types: Record<number, DeviceType> = {
     "id": 769,
     "label": "Thermostat",
     "clusters": [
+      513,
+      98,
       3,
       4,
-      29,
-      30,
+      516,
       56,
-      98,
-      513,
-      516
+      29,
+      30
     ]
   },
   "43": {
@@ -415,14 +451,14 @@ export const device_types: Record<number, DeviceType> = {
       1283,
       1284,
       1285,
-      6,
-      1287,
-      1288,
       1286,
+      1287,
+      6,
+      1288,
       1290,
-      1289,
-      1292,
       1291,
+      1292,
+      1289,
       1294,
       29
     ]
@@ -434,10 +470,10 @@ export const device_types: Record<number, DeviceType> = {
       1283,
       1284,
       1285,
-      6,
-      1287,
-      1288,
       1286,
+      1287,
+      6,
+      1288,
       1289,
       1291,
       29
@@ -450,17 +486,17 @@ export const device_types: Record<number, DeviceType> = {
       1283,
       1284,
       1285,
-      6,
-      1287,
-      8,
-      1288,
-      1290,
       1286,
+      1287,
+      6,
+      8,
+      1290,
+      1291,
       1292,
       1293,
       1294,
+      1288,
       1289,
-      1291,
       29,
       30
     ]
@@ -472,16 +508,16 @@ export const device_types: Record<number, DeviceType> = {
       1283,
       1284,
       1285,
-      6,
-      1287,
-      8,
-      1288,
-      1290,
       1286,
-      1292,
-      1289,
-      1294,
+      1287,
+      6,
+      8,
+      1290,
       1291,
+      1292,
+      1288,
+      1294,
+      1289,
       29,
       30
     ]
@@ -526,14 +562,14 @@ export const device_types: Record<number, DeviceType> = {
     "label": "Room Air Conditioner",
     "clusters": [
       513,
-      98,
-      514,
-      516,
-      1029,
-      3,
       1026,
+      3,
       4,
+      514,
       6,
+      1029,
+      516,
+      98,
       29
     ]
   },
@@ -574,9 +610,9 @@ export const device_types: Record<number, DeviceType> = {
       1067,
       1036,
       1069,
-      1070,
       1037,
       1071,
+      1070,
       1068,
       1043,
       1045,
@@ -693,9 +729,9 @@ export const device_types: Record<number, DeviceType> = {
     "label": "Water Freeze Detector",
     "clusters": [
       128,
+      29,
       3,
-      69,
-      29
+      69
     ]
   },
   "66": {
@@ -712,9 +748,9 @@ export const device_types: Record<number, DeviceType> = {
     "label": "Water Leak Detector",
     "clusters": [
       128,
+      29,
       3,
-      69,
-      29
+      69
     ]
   },
   "68": {
@@ -722,9 +758,9 @@ export const device_types: Record<number, DeviceType> = {
     "label": "Rain Sensor",
     "clusters": [
       128,
+      29,
       3,
-      69,
-      29
+      69
     ]
   },
   "144": {
@@ -742,8 +778,8 @@ export const device_types: Record<number, DeviceType> = {
     "label": "Thread Border Router",
     "clusters": [
       1106,
-      53,
-      29
+      29,
+      53
     ]
   },
   "4293984259": {
@@ -752,10 +788,10 @@ export const device_types: Record<number, DeviceType> = {
     "clusters": [
       768,
       257,
-      98,
-      3,
       1026,
+      3,
       4,
+      98,
       6,
       8,
       29,
@@ -808,7 +844,6 @@ export const device_types: Record<number, DeviceType> = {
     "label": "Device Energy Management",
     "clusters": [
       152,
-      29,
       159
     ]
   },
@@ -846,6 +881,14 @@ export const device_types: Record<number, DeviceType> = {
       3,
       29
     ]
+  },
+  "778": {
+    "id": 778,
+    "label": "Thermostat Controller",
+    "clusters": [
+      29,
+      30
+    ]
   }
 }
 
@@ -876,12 +919,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 65529,
         "cluster_id": 3,
         "label": "AcceptedCommandList",
-        "type": "List[uint]"
-      },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 3,
-        "label": "EventList",
         "type": "List[uint]"
       },
       "65531": {
@@ -924,12 +961,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 65529,
         "cluster_id": 4,
         "label": "AcceptedCommandList",
-        "type": "List[uint]"
-      },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 4,
-        "label": "EventList",
         "type": "List[uint]"
       },
       "65531": {
@@ -996,12 +1027,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 65529,
         "cluster_id": 6,
         "label": "AcceptedCommandList",
-        "type": "List[uint]"
-      },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 6,
-        "label": "EventList",
         "type": "List[uint]"
       },
       "65531": {
@@ -1124,12 +1149,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 8,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 8,
@@ -1164,12 +1183,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 65529,
         "cluster_id": 28,
         "label": "AcceptedCommandList",
-        "type": "List[uint]"
-      },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 28,
-        "label": "EventList",
         "type": "List[uint]"
       },
       "65531": {
@@ -1238,12 +1251,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 29,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 29,
@@ -1284,12 +1291,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 65529,
         "cluster_id": 30,
         "label": "AcceptedCommandList",
-        "type": "List[uint]"
-      },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 30,
-        "label": "EventList",
         "type": "List[uint]"
       },
       "65531": {
@@ -1370,12 +1371,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 31,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 31,
@@ -1428,12 +1423,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 65529,
         "cluster_id": 37,
         "label": "AcceptedCommandList",
-        "type": "List[uint]"
-      },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 37,
-        "label": "EventList",
         "type": "List[uint]"
       },
       "65531": {
@@ -1610,12 +1599,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 40,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 40,
@@ -1650,12 +1633,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 65529,
         "cluster_id": 41,
         "label": "AcceptedCommandList",
-        "type": "List[uint]"
-      },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 41,
-        "label": "EventList",
         "type": "List[uint]"
       },
       "65531": {
@@ -1718,12 +1695,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 42,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 42,
@@ -1770,12 +1741,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 65529,
         "cluster_id": 43,
         "label": "AcceptedCommandList",
-        "type": "List[uint]"
-      },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 43,
-        "label": "EventList",
         "type": "List[uint]"
       },
       "65531": {
@@ -1832,12 +1797,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 44,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 44,
@@ -1880,12 +1839,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 45,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 45,
@@ -1926,12 +1879,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 65529,
         "cluster_id": 46,
         "label": "AcceptedCommandList",
-        "type": "List[uint]"
-      },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 46,
-        "label": "EventList",
         "type": "List[uint]"
       },
       "65531": {
@@ -2162,12 +2109,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 47,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 47,
@@ -2246,6 +2187,12 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "TCAcknowledgementsRequired",
         "type": "Optional[bool]"
       },
+      "9": {
+        "id": 9,
+        "cluster_id": 48,
+        "label": "TCUpdateDeadline",
+        "type": "Union[NoneType, Nullable, uint]"
+      },
       "65528": {
         "id": 65528,
         "cluster_id": 48,
@@ -2256,12 +2203,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 65529,
         "cluster_id": 48,
         "label": "AcceptedCommandList",
-        "type": "List[uint]"
-      },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 48,
-        "label": "EventList",
         "type": "List[uint]"
       },
       "65531": {
@@ -2366,12 +2307,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 49,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 49,
@@ -2406,12 +2341,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 65529,
         "cluster_id": 50,
         "label": "AcceptedCommandList",
-        "type": "List[uint]"
-      },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 50,
-        "label": "EventList",
         "type": "List[uint]"
       },
       "65531": {
@@ -2504,12 +2433,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 51,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 51,
@@ -2568,12 +2491,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 65529,
         "cluster_id": 52,
         "label": "AcceptedCommandList",
-        "type": "List[uint]"
-      },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 52,
-        "label": "EventList",
         "type": "List[uint]"
       },
       "65531": {
@@ -2990,12 +2907,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 53,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 53,
@@ -3110,12 +3021,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 54,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 54,
@@ -3204,12 +3109,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 65529,
         "cluster_id": 55,
         "label": "AcceptedCommandList",
-        "type": "List[uint]"
-      },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 55,
-        "label": "EventList",
         "type": "List[uint]"
       },
       "65531": {
@@ -3324,12 +3223,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 65529,
         "cluster_id": 56,
         "label": "AcceptedCommandList",
-        "type": "List[uint]"
-      },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 56,
-        "label": "EventList",
         "type": "List[uint]"
       },
       "65531": {
@@ -3470,12 +3363,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 57,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 57,
@@ -3530,12 +3417,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 59,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 59,
@@ -3588,12 +3469,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 65529,
         "cluster_id": 60,
         "label": "AcceptedCommandList",
-        "type": "List[uint]"
-      },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 60,
-        "label": "EventList",
         "type": "List[uint]"
       },
       "65531": {
@@ -3668,12 +3543,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 62,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 62,
@@ -3734,12 +3603,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 63,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 63,
@@ -3780,12 +3643,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 65529,
         "cluster_id": 64,
         "label": "AcceptedCommandList",
-        "type": "List[uint]"
-      },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 64,
-        "label": "EventList",
         "type": "List[uint]"
       },
       "65531": {
@@ -3830,12 +3687,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 65,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 65,
@@ -3870,12 +3721,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 65529,
         "cluster_id": 66,
         "label": "AcceptedCommandList",
-        "type": "List[uint]"
-      },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 66,
-        "label": "EventList",
         "type": "List[uint]"
       },
       "65531": {
@@ -3914,12 +3759,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 67,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 67,
@@ -3954,12 +3793,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 65529,
         "cluster_id": 68,
         "label": "AcceptedCommandList",
-        "type": "List[uint]"
-      },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 68,
-        "label": "EventList",
         "type": "List[uint]"
       },
       "65531": {
@@ -4002,12 +3835,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 65529,
         "cluster_id": 69,
         "label": "AcceptedCommandList",
-        "type": "List[uint]"
-      },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 69,
-        "label": "EventList",
         "type": "List[uint]"
       },
       "65531": {
@@ -4106,12 +3933,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 70,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 70,
@@ -4164,12 +3985,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 65529,
         "cluster_id": 71,
         "label": "AcceptedCommandList",
-        "type": "List[uint]"
-      },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 71,
-        "label": "EventList",
         "type": "List[uint]"
       },
       "65531": {
@@ -4244,12 +4059,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 72,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 72,
@@ -4310,12 +4119,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 73,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 73,
@@ -4362,12 +4165,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 65529,
         "cluster_id": 74,
         "label": "AcceptedCommandList",
-        "type": "List[uint]"
-      },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 74,
-        "label": "EventList",
         "type": "List[uint]"
       },
       "65531": {
@@ -4442,12 +4239,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 80,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 80,
@@ -4506,12 +4297,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 65529,
         "cluster_id": 81,
         "label": "AcceptedCommandList",
-        "type": "List[uint]"
-      },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 81,
-        "label": "EventList",
         "type": "List[uint]"
       },
       "65531": {
@@ -4574,12 +4359,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 82,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 82,
@@ -4640,12 +4419,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 83,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 83,
@@ -4694,12 +4467,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 84,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 84,
@@ -4746,12 +4513,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 65529,
         "cluster_id": 85,
         "label": "AcceptedCommandList",
-        "type": "List[uint]"
-      },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 85,
-        "label": "EventList",
         "type": "List[uint]"
       },
       "65531": {
@@ -4826,12 +4587,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 86,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 86,
@@ -4884,12 +4639,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 65529,
         "cluster_id": 87,
         "label": "AcceptedCommandList",
-        "type": "List[uint]"
-      },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 87,
-        "label": "EventList",
         "type": "List[uint]"
       },
       "65531": {
@@ -4952,12 +4701,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 89,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 89,
@@ -4998,12 +4741,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 65529,
         "cluster_id": 91,
         "label": "AcceptedCommandList",
-        "type": "List[uint]"
-      },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 91,
-        "label": "EventList",
         "type": "List[uint]"
       },
       "65531": {
@@ -5120,12 +4857,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 92,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 92,
@@ -5186,12 +4917,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 93,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 93,
@@ -5238,12 +4963,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 65529,
         "cluster_id": 94,
         "label": "AcceptedCommandList",
-        "type": "List[uint]"
-      },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 94,
-        "label": "EventList",
         "type": "List[uint]"
       },
       "65531": {
@@ -5336,12 +5055,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 95,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 95,
@@ -5412,12 +5125,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 65529,
         "cluster_id": 96,
         "label": "AcceptedCommandList",
-        "type": "List[uint]"
-      },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 96,
-        "label": "EventList",
         "type": "List[uint]"
       },
       "65531": {
@@ -5492,12 +5199,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 97,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 97,
@@ -5550,12 +5251,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 65529,
         "cluster_id": 98,
         "label": "AcceptedCommandList",
-        "type": "List[uint]"
-      },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 98,
-        "label": "EventList",
         "type": "List[uint]"
       },
       "65531": {
@@ -5630,12 +5325,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 113,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 113,
@@ -5706,12 +5395,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 65529,
         "cluster_id": 114,
         "label": "AcceptedCommandList",
-        "type": "List[uint]"
-      },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 114,
-        "label": "EventList",
         "type": "List[uint]"
       },
       "65531": {
@@ -5796,12 +5479,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 65529,
         "cluster_id": 128,
         "label": "AcceptedCommandList",
-        "type": "List[uint]"
-      },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 128,
-        "label": "EventList",
         "type": "List[uint]"
       },
       "65531": {
@@ -5904,12 +5581,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 65529,
         "cluster_id": 129,
         "label": "AcceptedCommandList",
-        "type": "List[uint]"
-      },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 129,
-        "label": "EventList",
         "type": "List[uint]"
       },
       "65531": {
@@ -6062,12 +5733,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 144,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 144,
@@ -6140,12 +5805,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 145,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 145,
@@ -6216,12 +5875,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 65529,
         "cluster_id": 148,
         "label": "AcceptedCommandList",
-        "type": "List[uint]"
-      },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 148,
-        "label": "EventList",
         "type": "List[uint]"
       },
       "65531": {
@@ -6308,12 +5961,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 150,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 150,
@@ -6360,12 +6007,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 65529,
         "cluster_id": 151,
         "label": "AcceptedCommandList",
-        "type": "List[uint]"
-      },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 151,
-        "label": "EventList",
         "type": "List[uint]"
       },
       "65531": {
@@ -6450,12 +6091,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 65529,
         "cluster_id": 152,
         "label": "AcceptedCommandList",
-        "type": "List[uint]"
-      },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 152,
-        "label": "EventList",
         "type": "List[uint]"
       },
       "65531": {
@@ -6632,12 +6267,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 153,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 153,
@@ -6704,12 +6333,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 155,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 155,
@@ -6758,12 +6381,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 156,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 156,
@@ -6800,18 +6417,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "CurrentMode",
         "type": "uint"
       },
-      "2": {
-        "id": 2,
-        "cluster_id": 157,
-        "label": "StartUpMode",
-        "type": "Union[NoneType, Nullable, uint]"
-      },
-      "3": {
-        "id": 3,
-        "cluster_id": 157,
-        "label": "OnMode",
-        "type": "Union[NoneType, Nullable, uint]"
-      },
       "65528": {
         "id": 65528,
         "cluster_id": 157,
@@ -6822,12 +6427,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 65529,
         "cluster_id": 157,
         "label": "AcceptedCommandList",
-        "type": "List[uint]"
-      },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 157,
-        "label": "EventList",
         "type": "List[uint]"
       },
       "65531": {
@@ -6866,18 +6465,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "CurrentMode",
         "type": "uint"
       },
-      "2": {
-        "id": 2,
-        "cluster_id": 158,
-        "label": "StartUpMode",
-        "type": "Union[NoneType, Nullable, uint]"
-      },
-      "3": {
-        "id": 3,
-        "cluster_id": 158,
-        "label": "OnMode",
-        "type": "Union[NoneType, Nullable, uint]"
-      },
       "65528": {
         "id": 65528,
         "cluster_id": 158,
@@ -6888,12 +6475,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 65529,
         "cluster_id": 158,
         "label": "AcceptedCommandList",
-        "type": "List[uint]"
-      },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 158,
-        "label": "EventList",
         "type": "List[uint]"
       },
       "65531": {
@@ -6932,18 +6513,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "CurrentMode",
         "type": "uint"
       },
-      "2": {
-        "id": 2,
-        "cluster_id": 159,
-        "label": "StartUpMode",
-        "type": "Union[NoneType, Nullable, uint]"
-      },
-      "3": {
-        "id": 3,
-        "cluster_id": 159,
-        "label": "OnMode",
-        "type": "Union[NoneType, Nullable, uint]"
-      },
       "65528": {
         "id": 65528,
         "cluster_id": 159,
@@ -6954,12 +6523,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 65529,
         "cluster_id": 159,
         "label": "AcceptedCommandList",
-        "type": "List[uint]"
-      },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 159,
-        "label": "EventList",
         "type": "List[uint]"
       },
       "65531": {
@@ -7268,12 +6831,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 257,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 257,
@@ -7442,12 +6999,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 258,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 258,
@@ -7463,6 +7014,102 @@ export const clusters: Record<number, ClusterDescription> = {
       "65533": {
         "id": 65533,
         "cluster_id": 258,
+        "label": "ClusterRevision",
+        "type": "uint"
+      }
+    }
+  },
+  "260": {
+    "id": 260,
+    "label": "ClosureControl",
+    "attributes": {
+      "0": {
+        "id": 0,
+        "cluster_id": 260,
+        "label": "CountdownTime",
+        "type": "Union[NoneType, Nullable, uint]"
+      },
+      "1": {
+        "id": 1,
+        "cluster_id": 260,
+        "label": "MainState",
+        "type": "aenum MainStateEnum"
+      },
+      "2": {
+        "id": 2,
+        "cluster_id": 260,
+        "label": "CurrentErrorList",
+        "type": "List[ClosureControl.Enums.ClosureErrorEnum]"
+      },
+      "3": {
+        "id": 3,
+        "cluster_id": 260,
+        "label": "OverallState",
+        "type": "Union[Nullable, ClosureControl.Structs.OverallStateStruct]"
+      },
+      "4": {
+        "id": 4,
+        "cluster_id": 260,
+        "label": "OverallTarget",
+        "type": "Union[Nullable, ClosureControl.Structs.OverallTargetStruct]"
+      },
+      "5": {
+        "id": 5,
+        "cluster_id": 260,
+        "label": "RestingProcedure",
+        "type": "Optional[ClosureControl.Enums.RestingProcedureEnum]"
+      },
+      "6": {
+        "id": 6,
+        "cluster_id": 260,
+        "label": "TriggerCondition",
+        "type": "Optional[ClosureControl.Enums.TriggerConditionEnum]"
+      },
+      "7": {
+        "id": 7,
+        "cluster_id": 260,
+        "label": "TriggerPosition",
+        "type": "Optional[ClosureControl.Enums.TriggerPositionEnum]"
+      },
+      "8": {
+        "id": 8,
+        "cluster_id": 260,
+        "label": "WaitingDelay",
+        "type": "Optional[uint]"
+      },
+      "9": {
+        "id": 9,
+        "cluster_id": 260,
+        "label": "KickoffTimer",
+        "type": "Optional[uint]"
+      },
+      "65528": {
+        "id": 65528,
+        "cluster_id": 260,
+        "label": "GeneratedCommandList",
+        "type": "List[uint]"
+      },
+      "65529": {
+        "id": 65529,
+        "cluster_id": 260,
+        "label": "AcceptedCommandList",
+        "type": "List[uint]"
+      },
+      "65531": {
+        "id": 65531,
+        "cluster_id": 260,
+        "label": "AttributeList",
+        "type": "List[uint]"
+      },
+      "65532": {
+        "id": 65532,
+        "cluster_id": 260,
+        "label": "FeatureMap",
+        "type": "uint"
+      },
+      "65533": {
+        "id": 65533,
+        "cluster_id": 260,
         "label": "ClusterRevision",
         "type": "uint"
       }
@@ -7518,12 +7165,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 65529,
         "cluster_id": 336,
         "label": "AcceptedCommandList",
-        "type": "List[uint]"
-      },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 336,
-        "label": "EventList",
         "type": "List[uint]"
       },
       "65531": {
@@ -7698,12 +7339,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 65529,
         "cluster_id": 512,
         "label": "AcceptedCommandList",
-        "type": "List[uint]"
-      },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 512,
-        "label": "EventList",
         "type": "List[uint]"
       },
       "65531": {
@@ -8102,12 +7737,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 513,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 513,
@@ -8216,12 +7845,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 514,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 514,
@@ -8274,12 +7897,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 65529,
         "cluster_id": 516,
         "label": "AcceptedCommandList",
-        "type": "List[uint]"
-      },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 516,
-        "label": "EventList",
         "type": "List[uint]"
       },
       "65531": {
@@ -8630,12 +8247,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 768,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 768,
@@ -8756,12 +8367,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 769,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 769,
@@ -8828,12 +8433,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 1024,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 1024,
@@ -8892,12 +8491,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 65529,
         "cluster_id": 1026,
         "label": "AcceptedCommandList",
-        "type": "List[uint]"
-      },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 1026,
-        "label": "EventList",
         "type": "List[uint]"
       },
       "65531": {
@@ -8990,12 +8583,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 1027,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 1027,
@@ -9056,12 +8643,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 1028,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 1028,
@@ -9120,12 +8701,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 65529,
         "cluster_id": 1029,
         "label": "AcceptedCommandList",
-        "type": "List[uint]"
-      },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 1029,
-        "label": "EventList",
         "type": "List[uint]"
       },
       "65531": {
@@ -9248,12 +8823,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 1030,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 1030,
@@ -9354,12 +8923,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 65529,
         "cluster_id": 1036,
         "label": "AcceptedCommandList",
-        "type": "List[uint]"
-      },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 1036,
-        "label": "EventList",
         "type": "List[uint]"
       },
       "65531": {
@@ -9464,12 +9027,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 1037,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 1037,
@@ -9570,12 +9127,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 65529,
         "cluster_id": 1043,
         "label": "AcceptedCommandList",
-        "type": "List[uint]"
-      },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 1043,
-        "label": "EventList",
         "type": "List[uint]"
       },
       "65531": {
@@ -9680,12 +9231,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 1045,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 1045,
@@ -9786,12 +9331,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 65529,
         "cluster_id": 1066,
         "label": "AcceptedCommandList",
-        "type": "List[uint]"
-      },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 1066,
-        "label": "EventList",
         "type": "List[uint]"
       },
       "65531": {
@@ -9896,12 +9435,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 1067,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 1067,
@@ -10002,12 +9535,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 65529,
         "cluster_id": 1068,
         "label": "AcceptedCommandList",
-        "type": "List[uint]"
-      },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 1068,
-        "label": "EventList",
         "type": "List[uint]"
       },
       "65531": {
@@ -10112,12 +9639,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 1069,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 1069,
@@ -10218,12 +9739,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 65529,
         "cluster_id": 1070,
         "label": "AcceptedCommandList",
-        "type": "List[uint]"
-      },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 1070,
-        "label": "EventList",
         "type": "List[uint]"
       },
       "65531": {
@@ -10328,12 +9843,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 1071,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 1071,
@@ -10380,12 +9889,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 65529,
         "cluster_id": 1105,
         "label": "AcceptedCommandList",
-        "type": "List[uint]"
-      },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 1105,
-        "label": "EventList",
         "type": "List[uint]"
       },
       "65531": {
@@ -10460,12 +9963,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 1106,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 1106,
@@ -10520,12 +10017,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 1107,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 1107,
@@ -10572,12 +10063,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 65529,
         "cluster_id": 1283,
         "label": "AcceptedCommandList",
-        "type": "List[uint]"
-      },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 1283,
-        "label": "EventList",
         "type": "List[uint]"
       },
       "65531": {
@@ -10634,12 +10119,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 1284,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 1284,
@@ -10686,12 +10165,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 65529,
         "cluster_id": 1285,
         "label": "AcceptedCommandList",
-        "type": "List[uint]"
-      },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 1285,
-        "label": "EventList",
         "type": "List[uint]"
       },
       "65531": {
@@ -10796,12 +10269,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 1286,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 1286,
@@ -10850,12 +10317,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 1287,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 1287,
@@ -10892,12 +10353,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 1288,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 1288,
@@ -10932,12 +10387,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 65529,
         "cluster_id": 1289,
         "label": "AcceptedCommandList",
-        "type": "List[uint]"
-      },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 1289,
-        "label": "EventList",
         "type": "List[uint]"
       },
       "65531": {
@@ -10988,12 +10437,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 1290,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 1290,
@@ -11042,12 +10485,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 1291,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 1291,
@@ -11094,12 +10531,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 65529,
         "cluster_id": 1292,
         "label": "AcceptedCommandList",
-        "type": "List[uint]"
-      },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 1292,
-        "label": "EventList",
         "type": "List[uint]"
       },
       "65531": {
@@ -11186,12 +10617,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 1293,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 1293,
@@ -11226,12 +10651,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 65529,
         "cluster_id": 1294,
         "label": "AcceptedCommandList",
-        "type": "List[uint]"
-      },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 1294,
-        "label": "EventList",
         "type": "List[uint]"
       },
       "65531": {
@@ -11318,12 +10737,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 1295,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 1295,
@@ -11360,12 +10773,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 1296,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 1296,
@@ -11381,6 +10788,630 @@ export const clusters: Record<number, ClusterDescription> = {
       "65533": {
         "id": 65533,
         "cluster_id": 1296,
+        "label": "ClusterRevision",
+        "type": "uint"
+      }
+    }
+  },
+  "1360": {
+    "id": 1360,
+    "label": "ZoneManagement",
+    "attributes": {
+      "0": {
+        "id": 0,
+        "cluster_id": 1360,
+        "label": "SupportedZoneSources",
+        "type": "List[ZoneManagement.Enums.ZoneSourceEnum]"
+      },
+      "1": {
+        "id": 1,
+        "cluster_id": 1360,
+        "label": "Zones",
+        "type": "Optional[List[ZoneManagement.Structs.ZoneInformationStruct]]"
+      },
+      "2": {
+        "id": 2,
+        "cluster_id": 1360,
+        "label": "Triggers",
+        "type": "List[ZoneManagement.Structs.ZoneTriggerControlStruct]"
+      },
+      "3": {
+        "id": 3,
+        "cluster_id": 1360,
+        "label": "Sensitivity",
+        "type": "Optional[uint]"
+      },
+      "65528": {
+        "id": 65528,
+        "cluster_id": 1360,
+        "label": "GeneratedCommandList",
+        "type": "List[uint]"
+      },
+      "65529": {
+        "id": 65529,
+        "cluster_id": 1360,
+        "label": "AcceptedCommandList",
+        "type": "List[uint]"
+      },
+      "65531": {
+        "id": 65531,
+        "cluster_id": 1360,
+        "label": "AttributeList",
+        "type": "List[uint]"
+      },
+      "65532": {
+        "id": 65532,
+        "cluster_id": 1360,
+        "label": "FeatureMap",
+        "type": "uint"
+      },
+      "65533": {
+        "id": 65533,
+        "cluster_id": 1360,
+        "label": "ClusterRevision",
+        "type": "uint"
+      }
+    }
+  },
+  "1361": {
+    "id": 1361,
+    "label": "CameraAvStreamManagement",
+    "attributes": {
+      "0": {
+        "id": 0,
+        "cluster_id": 1361,
+        "label": "MaxConcurrentVideoEncoders",
+        "type": "Optional[uint]"
+      },
+      "1": {
+        "id": 1,
+        "cluster_id": 1361,
+        "label": "MaxEncodedPixelRate",
+        "type": "Optional[uint]"
+      },
+      "2": {
+        "id": 2,
+        "cluster_id": 1361,
+        "label": "VideoSensorParams",
+        "type": "Optional[CameraAvStreamManagement.Structs.VideoSensorParamsStruct]"
+      },
+      "3": {
+        "id": 3,
+        "cluster_id": 1361,
+        "label": "NightVisionCapable",
+        "type": "Optional[bool]"
+      },
+      "4": {
+        "id": 4,
+        "cluster_id": 1361,
+        "label": "MinViewport",
+        "type": "Optional[CameraAvStreamManagement.Structs.VideoResolutionStruct]"
+      },
+      "5": {
+        "id": 5,
+        "cluster_id": 1361,
+        "label": "RateDistortionTradeOffPoints",
+        "type": "Optional[List[CameraAvStreamManagement.Structs.RateDistortionTradeOffPointsStruct]]"
+      },
+      "6": {
+        "id": 6,
+        "cluster_id": 1361,
+        "label": "MaxContentBufferSize",
+        "type": "Optional[uint]"
+      },
+      "7": {
+        "id": 7,
+        "cluster_id": 1361,
+        "label": "MicrophoneCapabilities",
+        "type": "Optional[CameraAvStreamManagement.Structs.AudioCapabilitiesStruct]"
+      },
+      "8": {
+        "id": 8,
+        "cluster_id": 1361,
+        "label": "SpeakerCapabilities",
+        "type": "Optional[CameraAvStreamManagement.Structs.AudioCapabilitiesStruct]"
+      },
+      "9": {
+        "id": 9,
+        "cluster_id": 1361,
+        "label": "TwoWayTalkSupport",
+        "type": "Optional[CameraAvStreamManagement.Enums.TwoWayTalkSupportTypeEnum]"
+      },
+      "10": {
+        "id": 10,
+        "cluster_id": 1361,
+        "label": "SupportedSnapshotParams",
+        "type": "Optional[List[CameraAvStreamManagement.Structs.SnapshotParamsStruct]]"
+      },
+      "11": {
+        "id": 11,
+        "cluster_id": 1361,
+        "label": "MaxNetworkBandwidth",
+        "type": "uint"
+      },
+      "12": {
+        "id": 12,
+        "cluster_id": 1361,
+        "label": "CurrentFrameRate",
+        "type": "Optional[uint]"
+      },
+      "13": {
+        "id": 13,
+        "cluster_id": 1361,
+        "label": "HDRModeEnabled",
+        "type": "Optional[bool]"
+      },
+      "14": {
+        "id": 14,
+        "cluster_id": 1361,
+        "label": "FabricsUsingCamera",
+        "type": "List[uint]"
+      },
+      "15": {
+        "id": 15,
+        "cluster_id": 1361,
+        "label": "AllocatedVideoStreams",
+        "type": "Optional[List[CameraAvStreamManagement.Structs.VideoStreamStruct]]"
+      },
+      "16": {
+        "id": 16,
+        "cluster_id": 1361,
+        "label": "AllocatedAudioStreams",
+        "type": "Optional[List[CameraAvStreamManagement.Structs.AudioStreamStruct]]"
+      },
+      "17": {
+        "id": 17,
+        "cluster_id": 1361,
+        "label": "AllocatedSnapshotStreams",
+        "type": "Optional[List[CameraAvStreamManagement.Structs.SnapshotStreamStruct]]"
+      },
+      "18": {
+        "id": 18,
+        "cluster_id": 1361,
+        "label": "RankedVideoStreamPrioritiesList",
+        "type": "Optional[List[CameraAvStreamManagement.Enums.StreamUsageEnum]]"
+      },
+      "19": {
+        "id": 19,
+        "cluster_id": 1361,
+        "label": "SoftRecordingPrivacyModeEnabled",
+        "type": "Optional[bool]"
+      },
+      "20": {
+        "id": 20,
+        "cluster_id": 1361,
+        "label": "SoftLivestreamPrivacyModeEnabled",
+        "type": "Optional[bool]"
+      },
+      "21": {
+        "id": 21,
+        "cluster_id": 1361,
+        "label": "HardPrivacyModeOn",
+        "type": "Optional[bool]"
+      },
+      "22": {
+        "id": 22,
+        "cluster_id": 1361,
+        "label": "NightVision",
+        "type": "Optional[CameraAvStreamManagement.Enums.TriStateAutoEnum]"
+      },
+      "23": {
+        "id": 23,
+        "cluster_id": 1361,
+        "label": "NightVisionIllum",
+        "type": "Optional[CameraAvStreamManagement.Enums.TriStateAutoEnum]"
+      },
+      "24": {
+        "id": 24,
+        "cluster_id": 1361,
+        "label": "Viewport",
+        "type": "Optional[CameraAvStreamManagement.Structs.ViewportStruct]"
+      },
+      "25": {
+        "id": 25,
+        "cluster_id": 1361,
+        "label": "SpeakerMuted",
+        "type": "Optional[bool]"
+      },
+      "26": {
+        "id": 26,
+        "cluster_id": 1361,
+        "label": "SpeakerVolumeLevel",
+        "type": "Optional[uint]"
+      },
+      "27": {
+        "id": 27,
+        "cluster_id": 1361,
+        "label": "SpeakerMaxLevel",
+        "type": "Optional[uint]"
+      },
+      "28": {
+        "id": 28,
+        "cluster_id": 1361,
+        "label": "SpeakerMinLevel",
+        "type": "Optional[uint]"
+      },
+      "29": {
+        "id": 29,
+        "cluster_id": 1361,
+        "label": "MicrophoneMuted",
+        "type": "Optional[bool]"
+      },
+      "30": {
+        "id": 30,
+        "cluster_id": 1361,
+        "label": "MicrophoneVolumeLevel",
+        "type": "Optional[uint]"
+      },
+      "31": {
+        "id": 31,
+        "cluster_id": 1361,
+        "label": "MicrophoneMaxLevel",
+        "type": "Optional[uint]"
+      },
+      "32": {
+        "id": 32,
+        "cluster_id": 1361,
+        "label": "MicrophoneMinLevel",
+        "type": "Optional[uint]"
+      },
+      "33": {
+        "id": 33,
+        "cluster_id": 1361,
+        "label": "MicrophoneAGCEnabled",
+        "type": "Optional[bool]"
+      },
+      "34": {
+        "id": 34,
+        "cluster_id": 1361,
+        "label": "ImageRotation",
+        "type": "Optional[uint]"
+      },
+      "35": {
+        "id": 35,
+        "cluster_id": 1361,
+        "label": "ImageFlipHorizontal",
+        "type": "Optional[bool]"
+      },
+      "36": {
+        "id": 36,
+        "cluster_id": 1361,
+        "label": "ImageFlipVertical",
+        "type": "Optional[bool]"
+      },
+      "37": {
+        "id": 37,
+        "cluster_id": 1361,
+        "label": "LocalVideoRecordingEnabled",
+        "type": "Optional[bool]"
+      },
+      "38": {
+        "id": 38,
+        "cluster_id": 1361,
+        "label": "LocalSnapshotRecordingEnabled",
+        "type": "Optional[bool]"
+      },
+      "39": {
+        "id": 39,
+        "cluster_id": 1361,
+        "label": "StatusLightEnabled",
+        "type": "Optional[bool]"
+      },
+      "40": {
+        "id": 40,
+        "cluster_id": 1361,
+        "label": "StatusLightBrightness",
+        "type": "Optional[Globals.Enums.ThreeLevelAutoEnum]"
+      },
+      "65528": {
+        "id": 65528,
+        "cluster_id": 1361,
+        "label": "GeneratedCommandList",
+        "type": "List[uint]"
+      },
+      "65529": {
+        "id": 65529,
+        "cluster_id": 1361,
+        "label": "AcceptedCommandList",
+        "type": "List[uint]"
+      },
+      "65531": {
+        "id": 65531,
+        "cluster_id": 1361,
+        "label": "AttributeList",
+        "type": "List[uint]"
+      },
+      "65532": {
+        "id": 65532,
+        "cluster_id": 1361,
+        "label": "FeatureMap",
+        "type": "uint"
+      },
+      "65533": {
+        "id": 65533,
+        "cluster_id": 1361,
+        "label": "ClusterRevision",
+        "type": "uint"
+      }
+    }
+  },
+  "1362": {
+    "id": 1362,
+    "label": "CameraAvSettingsUserLevelManagement",
+    "attributes": {
+      "0": {
+        "id": 0,
+        "cluster_id": 1362,
+        "label": "MPTZPosition",
+        "type": "Optional[CameraAvSettingsUserLevelManagement.Structs.MPTZStruct]"
+      },
+      "1": {
+        "id": 1,
+        "cluster_id": 1362,
+        "label": "MaxPresets",
+        "type": "Optional[uint]"
+      },
+      "2": {
+        "id": 2,
+        "cluster_id": 1362,
+        "label": "MPTZPresets",
+        "type": "Optional[List[CameraAvSettingsUserLevelManagement.Structs.MPTZPresetStruct]]"
+      },
+      "3": {
+        "id": 3,
+        "cluster_id": 1362,
+        "label": "DPTZRelativeMove",
+        "type": "Optional[List[uint]]"
+      },
+      "4": {
+        "id": 4,
+        "cluster_id": 1362,
+        "label": "ZoomMax",
+        "type": "Optional[uint]"
+      },
+      "5": {
+        "id": 5,
+        "cluster_id": 1362,
+        "label": "TiltMin",
+        "type": "Optional[int]"
+      },
+      "6": {
+        "id": 6,
+        "cluster_id": 1362,
+        "label": "TiltMax",
+        "type": "Optional[int]"
+      },
+      "7": {
+        "id": 7,
+        "cluster_id": 1362,
+        "label": "PanMin",
+        "type": "Optional[int]"
+      },
+      "8": {
+        "id": 8,
+        "cluster_id": 1362,
+        "label": "PanMax",
+        "type": "Optional[int]"
+      },
+      "65528": {
+        "id": 65528,
+        "cluster_id": 1362,
+        "label": "GeneratedCommandList",
+        "type": "List[uint]"
+      },
+      "65529": {
+        "id": 65529,
+        "cluster_id": 1362,
+        "label": "AcceptedCommandList",
+        "type": "List[uint]"
+      },
+      "65531": {
+        "id": 65531,
+        "cluster_id": 1362,
+        "label": "AttributeList",
+        "type": "List[uint]"
+      },
+      "65532": {
+        "id": 65532,
+        "cluster_id": 1362,
+        "label": "FeatureMap",
+        "type": "uint"
+      },
+      "65533": {
+        "id": 65533,
+        "cluster_id": 1362,
+        "label": "ClusterRevision",
+        "type": "uint"
+      }
+    }
+  },
+  "1363": {
+    "id": 1363,
+    "label": "WebRTCTransportProvider",
+    "attributes": {
+      "0": {
+        "id": 0,
+        "cluster_id": 1363,
+        "label": "CurrentSessions",
+        "type": "List[WebRTCTransportProvider.Structs.WebRTCSessionStruct]"
+      },
+      "65528": {
+        "id": 65528,
+        "cluster_id": 1363,
+        "label": "GeneratedCommandList",
+        "type": "List[uint]"
+      },
+      "65529": {
+        "id": 65529,
+        "cluster_id": 1363,
+        "label": "AcceptedCommandList",
+        "type": "List[uint]"
+      },
+      "65531": {
+        "id": 65531,
+        "cluster_id": 1363,
+        "label": "AttributeList",
+        "type": "List[uint]"
+      },
+      "65532": {
+        "id": 65532,
+        "cluster_id": 1363,
+        "label": "FeatureMap",
+        "type": "uint"
+      },
+      "65533": {
+        "id": 65533,
+        "cluster_id": 1363,
+        "label": "ClusterRevision",
+        "type": "uint"
+      }
+    }
+  },
+  "1364": {
+    "id": 1364,
+    "label": "WebRTCTransportRequestor",
+    "attributes": {
+      "0": {
+        "id": 0,
+        "cluster_id": 1364,
+        "label": "CurrentSessions",
+        "type": "List[WebRTCTransportRequestor.Structs.WebRTCSessionStruct]"
+      },
+      "65528": {
+        "id": 65528,
+        "cluster_id": 1364,
+        "label": "GeneratedCommandList",
+        "type": "List[uint]"
+      },
+      "65529": {
+        "id": 65529,
+        "cluster_id": 1364,
+        "label": "AcceptedCommandList",
+        "type": "List[uint]"
+      },
+      "65531": {
+        "id": 65531,
+        "cluster_id": 1364,
+        "label": "AttributeList",
+        "type": "List[uint]"
+      },
+      "65532": {
+        "id": 65532,
+        "cluster_id": 1364,
+        "label": "FeatureMap",
+        "type": "uint"
+      },
+      "65533": {
+        "id": 65533,
+        "cluster_id": 1364,
+        "label": "ClusterRevision",
+        "type": "uint"
+      }
+    }
+  },
+  "1365": {
+    "id": 1365,
+    "label": "PushAvStreamTransport",
+    "attributes": {
+      "0": {
+        "id": 0,
+        "cluster_id": 1365,
+        "label": "SupportedContainerFormats",
+        "type": "uint"
+      },
+      "1": {
+        "id": 1,
+        "cluster_id": 1365,
+        "label": "SupportedIngestMethods",
+        "type": "uint"
+      },
+      "2": {
+        "id": 2,
+        "cluster_id": 1365,
+        "label": "CurrentConnections",
+        "type": "List[uint]"
+      },
+      "65528": {
+        "id": 65528,
+        "cluster_id": 1365,
+        "label": "GeneratedCommandList",
+        "type": "List[uint]"
+      },
+      "65529": {
+        "id": 65529,
+        "cluster_id": 1365,
+        "label": "AcceptedCommandList",
+        "type": "List[uint]"
+      },
+      "65531": {
+        "id": 65531,
+        "cluster_id": 1365,
+        "label": "AttributeList",
+        "type": "List[uint]"
+      },
+      "65532": {
+        "id": 65532,
+        "cluster_id": 1365,
+        "label": "FeatureMap",
+        "type": "uint"
+      },
+      "65533": {
+        "id": 65533,
+        "cluster_id": 1365,
+        "label": "ClusterRevision",
+        "type": "uint"
+      }
+    }
+  },
+  "1366": {
+    "id": 1366,
+    "label": "Chime",
+    "attributes": {
+      "0": {
+        "id": 0,
+        "cluster_id": 1366,
+        "label": "InstalledChimeSounds",
+        "type": "List[Chime.Structs.ChimeSoundStruct]"
+      },
+      "1": {
+        "id": 1,
+        "cluster_id": 1366,
+        "label": "ActiveChimeID",
+        "type": "uint"
+      },
+      "2": {
+        "id": 2,
+        "cluster_id": 1366,
+        "label": "Enabled",
+        "type": "bool"
+      },
+      "65528": {
+        "id": 65528,
+        "cluster_id": 1366,
+        "label": "GeneratedCommandList",
+        "type": "List[uint]"
+      },
+      "65529": {
+        "id": 65529,
+        "cluster_id": 1366,
+        "label": "AcceptedCommandList",
+        "type": "List[uint]"
+      },
+      "65531": {
+        "id": 65531,
+        "cluster_id": 1366,
+        "label": "AttributeList",
+        "type": "List[uint]"
+      },
+      "65532": {
+        "id": 65532,
+        "cluster_id": 1366,
+        "label": "FeatureMap",
+        "type": "uint"
+      },
+      "65533": {
+        "id": 65533,
+        "cluster_id": 1366,
         "label": "ClusterRevision",
         "type": "uint"
       }
@@ -11412,12 +11443,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 65529,
         "cluster_id": 1872,
         "label": "AcceptedCommandList",
-        "type": "List[uint]"
-      },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 1872,
-        "label": "EventList",
         "type": "List[uint]"
       },
       "65531": {
@@ -11462,12 +11487,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 1873,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 1873,
@@ -11483,6 +11502,66 @@ export const clusters: Record<number, ClusterDescription> = {
       "65533": {
         "id": 65533,
         "cluster_id": 1873,
+        "label": "ClusterRevision",
+        "type": "uint"
+      }
+    }
+  },
+  "2049": {
+    "id": 2049,
+    "label": "TlsCertificateManagement",
+    "attributes": {
+      "0": {
+        "id": 0,
+        "cluster_id": 2049,
+        "label": "MaxRootCertificates",
+        "type": "uint"
+      },
+      "1": {
+        "id": 1,
+        "cluster_id": 2049,
+        "label": "CurrentRootCertificates",
+        "type": "uint"
+      },
+      "2": {
+        "id": 2,
+        "cluster_id": 2049,
+        "label": "MaxClientCertificates",
+        "type": "uint"
+      },
+      "3": {
+        "id": 3,
+        "cluster_id": 2049,
+        "label": "CurrentClientCertificates",
+        "type": "uint"
+      },
+      "65528": {
+        "id": 65528,
+        "cluster_id": 2049,
+        "label": "GeneratedCommandList",
+        "type": "List[uint]"
+      },
+      "65529": {
+        "id": 65529,
+        "cluster_id": 2049,
+        "label": "AcceptedCommandList",
+        "type": "List[uint]"
+      },
+      "65531": {
+        "id": 65531,
+        "cluster_id": 2049,
+        "label": "AttributeList",
+        "type": "List[uint]"
+      },
+      "65532": {
+        "id": 65532,
+        "cluster_id": 2049,
+        "label": "FeatureMap",
+        "type": "uint"
+      },
+      "65533": {
+        "id": 65533,
+        "cluster_id": 2049,
         "label": "ClusterRevision",
         "type": "uint"
       }
@@ -12032,12 +12111,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 4294048773,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 4294048773,
@@ -12080,12 +12153,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 4294048774,
-        "label": "EventList",
-        "type": "List[uint]"
-      },
       "65531": {
         "id": 65531,
         "cluster_id": 4294048774,
@@ -12126,12 +12193,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 65529,
         "cluster_id": 4294048800,
         "label": "AcceptedCommandList",
-        "type": "List[uint]"
-      },
-      "65530": {
-        "id": 65530,
-        "cluster_id": 4294048800,
-        "label": "EventList",
         "type": "List[uint]"
       },
       "65531": {
