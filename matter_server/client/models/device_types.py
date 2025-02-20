@@ -208,6 +208,46 @@ class DimmablePlugInUnit(DeviceType, device_type=0x010B):
     }
 
 
+class MountedOnOffControl(DeviceType, device_type=0x010F):
+    """Mounted On/Off Control."""
+
+    clusters = {
+        all_clusters.Groups,
+        all_clusters.Identify,
+        all_clusters.LevelControl,
+        all_clusters.OnOff,
+        all_clusters.ScenesManagement,
+    }
+
+
+class MountedDimmableLoadControl(DeviceType, device_type=0x0110):
+    """Mounted Dimmable Load Control."""
+
+    clusters = {
+        all_clusters.Groups,
+        all_clusters.Identify,
+        all_clusters.LevelControl,
+        all_clusters.OnOff,
+        all_clusters.ScenesManagement,
+    }
+
+
+class Camera(DeviceType, device_type=0x0142):
+    """Camera."""
+
+    clusters = {
+        all_clusters.CameraAvSettingsUserLevelManagement,
+        all_clusters.CameraAvStreamManagement,
+        all_clusters.OccupancySensing,
+        all_clusters.PushAvStreamTransport,
+        all_clusters.TlsCertificateManagement,
+        #all_clusters.TlsClientManagement,
+        all_clusters.TimeSynchronization,
+        all_clusters.WebRTCTransportProvider,
+        all_clusters.ZoneManagement,
+    }
+
+
 class Pump(DeviceType, device_type=0x0303):
     """Pump."""
 
@@ -883,7 +923,6 @@ class DeviceEnergyManagement(DeviceType, device_type=0x050D):
     """Device Energy Management."""
 
     clusters = {
-        all_clusters.Descriptor,
         all_clusters.DeviceEnergyManagement,
         all_clusters.DeviceEnergyManagementMode,
     }
@@ -925,4 +964,13 @@ class BatteryStorage(DeviceType, device_type=0x0018):
     clusters = {
         all_clusters.Descriptor,
         all_clusters.Identify,
+    }
+
+
+class ThermostatController(DeviceType, device_type=0x030A):
+    """Thermostat Controller."""
+
+    clusters = {
+        all_clusters.Descriptor,
+        all_clusters.Binding,
     }
