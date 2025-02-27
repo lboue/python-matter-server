@@ -236,15 +236,240 @@ class Camera(DeviceType, device_type=0x0142):
     """Camera."""
 
     clusters = {
-        all_clusters.CameraAvSettingsUserLevelManagement,
-        all_clusters.CameraAvStreamManagement,
+        #all_clusters.CameraAvSettingsUserLevelManagement,
+        #all_clusters.CameraAvStreamManagement,
         all_clusters.OccupancySensing,
-        all_clusters.PushAvStreamTransport,
-        all_clusters.TlsCertificateManagement,
+        #all_clusters.PushAvStreamTransport,
+        #all_clusters.TlsCertificateManagement,
         #all_clusters.TlsClientManagement,
         all_clusters.TimeSynchronization,
+        #all_clusters.WebrtcTransportProvider,
         all_clusters.WebRTCTransportProvider,
-        all_clusters.ZoneManagement,
+        #all_clusters.ZoneManagement,
+    }
+
+
+class Closurebase(DeviceType, device_type=0x0230):
+    """ClosureBase."""
+
+    clusters = {
+        all_clusters.Closure1stDimension,
+        all_clusters.Closure2ndDimension,
+        all_clusters.Closure3rdDimension,
+        all_clusters.Closure4thDimension,
+        all_clusters.Closure5thDimension,
+        all_clusters.ClosureControl,
+        all_clusters.Groups,
+        all_clusters.Identify,
+        all_clusters.ScenesManagement,
+    }
+
+
+class Window(DeviceType, device_type=0x0231):
+    """Window."""
+
+    clusters = {
+        all_clusters.Closure1stDimension,
+        all_clusters.Closure2ndDimension,
+        all_clusters.Closure3rdDimension,
+        all_clusters.Closure4thDimension,
+        all_clusters.Closure5thDimension,
+        all_clusters.ClosureControl,
+        all_clusters.Groups,
+        all_clusters.Identify,
+        all_clusters.ScenesManagement,
+    }
+
+
+class Shutter(DeviceType, device_type=0x0232):
+    """Shutter."""
+
+    clusters = {
+        all_clusters.Closure1stDimension,
+        all_clusters.Closure2ndDimension,
+        all_clusters.Closure3rdDimension,
+        all_clusters.Closure4thDimension,
+        all_clusters.Closure5thDimension,
+        all_clusters.ClosureControl,
+        all_clusters.Groups,
+        all_clusters.Identify,
+        all_clusters.ScenesManagement,
+    }
+
+
+class Shade(DeviceType, device_type=0x0233):
+    """Shade."""
+
+    clusters = {
+        all_clusters.Closure1stDimension,
+        all_clusters.Closure2ndDimension,
+        all_clusters.Closure3rdDimension,
+        all_clusters.Closure4thDimension,
+        all_clusters.Closure5thDimension,
+        all_clusters.ClosureControl,
+        all_clusters.Groups,
+        all_clusters.Identify,
+        all_clusters.ScenesManagement,
+    }
+
+
+class Curtain(DeviceType, device_type=0x0234):
+    """Curtain."""
+
+    clusters = {
+        all_clusters.Closure1stDimension,
+        all_clusters.Closure2ndDimension,
+        all_clusters.Closure3rdDimension,
+        all_clusters.Closure4thDimension,
+        all_clusters.Closure5thDimension,
+        all_clusters.ClosureControl,
+        all_clusters.Groups,
+        all_clusters.Identify,
+        all_clusters.ScenesManagement,
+    }
+
+
+class Blind(DeviceType, device_type=0x0235):
+    """Blind."""
+
+    clusters = {
+        all_clusters.Closure1stDimension,
+        all_clusters.Closure2ndDimension,
+        all_clusters.Closure3rdDimension,
+        all_clusters.Closure4thDimension,
+        all_clusters.Closure5thDimension,
+        all_clusters.ClosureControl,
+        all_clusters.Groups,
+        all_clusters.Identify,
+        all_clusters.ScenesManagement,
+    }
+
+
+class Screen(DeviceType, device_type=0x0236):
+    """Screen."""
+
+    clusters = {
+        all_clusters.Closure1stDimension,
+        all_clusters.Closure2ndDimension,
+        all_clusters.Closure3rdDimension,
+        all_clusters.Closure4thDimension,
+        all_clusters.Closure5thDimension,
+        all_clusters.ClosureControl,
+        all_clusters.Groups,
+        all_clusters.Identify,
+        all_clusters.ScenesManagement,
+    }
+
+
+class Awning(DeviceType, device_type=0x0237):
+    """Awning."""
+
+    clusters = {
+        all_clusters.Closure1stDimension,
+        all_clusters.Closure2ndDimension,
+        all_clusters.Closure3rdDimension,
+        all_clusters.Closure4thDimension,
+        all_clusters.Closure5thDimension,
+        all_clusters.ClosureControl,
+        all_clusters.Groups,
+        all_clusters.Identify,
+        all_clusters.ScenesManagement,
+    }
+
+
+class Pergola(DeviceType, device_type=0x0238):
+    """Pergola."""
+
+    clusters = {
+        all_clusters.Closure1stDimension,
+        all_clusters.Closure2ndDimension,
+        all_clusters.Closure3rdDimension,
+        all_clusters.Closure4thDimension,
+        all_clusters.Closure5thDimension,
+        all_clusters.ClosureControl,
+        all_clusters.Groups,
+        all_clusters.Identify,
+        all_clusters.ScenesManagement,
+    }
+
+
+class Door(DeviceType, device_type=0x0239):
+    """Door."""
+
+    clusters = {
+        all_clusters.Closure1stDimension,
+        all_clusters.Closure2ndDimension,
+        all_clusters.Closure3rdDimension,
+        all_clusters.Closure4thDimension,
+        all_clusters.Closure5thDimension,
+        all_clusters.ClosureControl,
+        all_clusters.Groups,
+        all_clusters.Identify,
+        all_clusters.ScenesManagement,
+    }
+
+
+class Garagedoor(DeviceType, device_type=0x023A):
+    """GarageDoor."""
+
+    clusters = {
+        all_clusters.Closure1stDimension,
+        all_clusters.Closure2ndDimension,
+        all_clusters.Closure3rdDimension,
+        all_clusters.Closure4thDimension,
+        all_clusters.Closure5thDimension,
+        all_clusters.ClosureControl,
+        all_clusters.Groups,
+        all_clusters.Identify,
+        all_clusters.ScenesManagement,
+    }
+
+
+class Gate(DeviceType, device_type=0x023B):
+    """Gate."""
+
+    clusters = {
+        all_clusters.Closure1stDimension,
+        all_clusters.Closure2ndDimension,
+        all_clusters.Closure3rdDimension,
+        all_clusters.Closure4thDimension,
+        all_clusters.Closure5thDimension,
+        all_clusters.ClosureControl,
+        all_clusters.Groups,
+        all_clusters.Identify,
+        all_clusters.ScenesManagement,
+    }
+
+
+class Barrier(DeviceType, device_type=0x023C):
+    """Barrier."""
+
+    clusters = {
+        all_clusters.Closure1stDimension,
+        all_clusters.Closure2ndDimension,
+        all_clusters.Closure3rdDimension,
+        all_clusters.Closure4thDimension,
+        all_clusters.Closure5thDimension,
+        all_clusters.ClosureControl,
+        all_clusters.Groups,
+        all_clusters.Identify,
+        all_clusters.ScenesManagement,
+    }
+
+
+class Cabinet(DeviceType, device_type=0x023D):
+    """Cabinet."""
+
+    clusters = {
+        all_clusters.Closure1stDimension,
+        all_clusters.Closure2ndDimension,
+        all_clusters.Closure3rdDimension,
+        all_clusters.Closure4thDimension,
+        all_clusters.Closure5thDimension,
+        all_clusters.ClosureControl,
+        all_clusters.Groups,
+        all_clusters.Identify,
+        all_clusters.ScenesManagement,
     }
 
 
