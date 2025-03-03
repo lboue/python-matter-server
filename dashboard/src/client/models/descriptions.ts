@@ -211,14 +211,152 @@ export const device_types: Record<number, DeviceType> = {
     "id": 322,
     "label": "Camera",
     "clusters": [
-      2049,
       1030,
       1360,
       1361,
       1362,
-      1363,
       1365,
       56
+    ]
+  },
+  "560": {
+    "id": 560,
+    "label": "ClosureBase",
+    "clusters": [
+      98,
+      3,
+      260,
+      4
+    ]
+  },
+  "561": {
+    "id": 561,
+    "label": "Window",
+    "clusters": [
+      98,
+      3,
+      260,
+      4
+    ]
+  },
+  "562": {
+    "id": 562,
+    "label": "Shutter",
+    "clusters": [
+      98,
+      3,
+      260,
+      4
+    ]
+  },
+  "563": {
+    "id": 563,
+    "label": "Shade",
+    "clusters": [
+      98,
+      3,
+      260,
+      4
+    ]
+  },
+  "564": {
+    "id": 564,
+    "label": "Curtain",
+    "clusters": [
+      98,
+      3,
+      260,
+      4
+    ]
+  },
+  "565": {
+    "id": 565,
+    "label": "Blind",
+    "clusters": [
+      98,
+      3,
+      260,
+      4
+    ]
+  },
+  "566": {
+    "id": 566,
+    "label": "Screen",
+    "clusters": [
+      98,
+      3,
+      260,
+      4
+    ]
+  },
+  "567": {
+    "id": 567,
+    "label": "Awning",
+    "clusters": [
+      98,
+      3,
+      260,
+      4
+    ]
+  },
+  "568": {
+    "id": 568,
+    "label": "Pergola",
+    "clusters": [
+      98,
+      3,
+      260,
+      4
+    ]
+  },
+  "569": {
+    "id": 569,
+    "label": "Door",
+    "clusters": [
+      98,
+      3,
+      260,
+      4
+    ]
+  },
+  "570": {
+    "id": 570,
+    "label": "GarageDoor",
+    "clusters": [
+      98,
+      3,
+      260,
+      4
+    ]
+  },
+  "571": {
+    "id": 571,
+    "label": "Gate",
+    "clusters": [
+      98,
+      3,
+      260,
+      4
+    ]
+  },
+  "572": {
+    "id": 572,
+    "label": "Barrier",
+    "clusters": [
+      98,
+      3,
+      260,
+      4
+    ]
+  },
+  "573": {
+    "id": 573,
+    "label": "Cabinet",
+    "clusters": [
+      98,
+      3,
+      260,
+      4
     ]
   },
   "771": {
@@ -226,14 +364,14 @@ export const device_types: Record<number, DeviceType> = {
     "label": "Pump",
     "clusters": [
       512,
-      1026,
-      3,
-      4,
-      1028,
-      6,
-      1027,
-      8,
       98,
+      1027,
+      4,
+      1026,
+      6,
+      3,
+      8,
+      1028,
       29,
       30
     ]
@@ -298,9 +436,9 @@ export const device_types: Record<number, DeviceType> = {
     "id": 21,
     "label": "Contact Sensor",
     "clusters": [
-      29,
       3,
-      69
+      69,
+      29
     ]
   },
   "262": {
@@ -319,8 +457,8 @@ export const device_types: Record<number, DeviceType> = {
     "clusters": [
       3,
       29,
-      1030,
-      30
+      30,
+      1030
     ]
   },
   "770": {
@@ -336,8 +474,8 @@ export const device_types: Record<number, DeviceType> = {
     "id": 773,
     "label": "Pressure Sensor",
     "clusters": [
-      3,
       1027,
+      3,
       29
     ]
   },
@@ -390,10 +528,10 @@ export const device_types: Record<number, DeviceType> = {
     "id": 514,
     "label": "Window Covering",
     "clusters": [
-      258,
-      3,
-      4,
       98,
+      3,
+      258,
+      4,
       29
     ]
   },
@@ -410,10 +548,10 @@ export const device_types: Record<number, DeviceType> = {
     "id": 768,
     "label": "Heating/Cooling Unit",
     "clusters": [
-      514,
-      3,
-      4,
       98,
+      514,
+      4,
+      3,
       6,
       8,
       29,
@@ -427,8 +565,8 @@ export const device_types: Record<number, DeviceType> = {
       513,
       98,
       3,
-      4,
       516,
+      4,
       56,
       29,
       30
@@ -451,14 +589,14 @@ export const device_types: Record<number, DeviceType> = {
       1283,
       1284,
       1285,
-      1286,
-      1287,
       6,
-      1288,
+      1287,
+      1286,
+      1289,
       1290,
       1291,
       1292,
-      1289,
+      1288,
       1294,
       29
     ]
@@ -470,11 +608,11 @@ export const device_types: Record<number, DeviceType> = {
       1283,
       1284,
       1285,
-      1286,
-      1287,
       6,
-      1288,
+      1287,
+      1286,
       1289,
+      1288,
       1291,
       29
     ]
@@ -486,17 +624,17 @@ export const device_types: Record<number, DeviceType> = {
       1283,
       1284,
       1285,
-      1286,
-      1287,
       6,
+      1287,
       8,
+      1289,
       1290,
       1291,
       1292,
       1293,
       1294,
+      1286,
       1288,
-      1289,
       29,
       30
     ]
@@ -508,16 +646,16 @@ export const device_types: Record<number, DeviceType> = {
       1283,
       1284,
       1285,
-      1286,
-      1287,
       6,
+      1287,
       8,
+      1289,
       1290,
       1291,
       1292,
-      1288,
+      1286,
       1294,
-      1289,
+      1288,
       29,
       30
     ]
@@ -562,14 +700,14 @@ export const device_types: Record<number, DeviceType> = {
     "label": "Room Air Conditioner",
     "clusters": [
       513,
+      98,
+      514,
+      516,
+      1029,
+      6,
+      4,
       1026,
       3,
-      4,
-      514,
-      6,
-      1029,
-      516,
-      98,
       29
     ]
   },
@@ -608,12 +746,12 @@ export const device_types: Record<number, DeviceType> = {
       1029,
       1066,
       1067,
-      1036,
-      1069,
-      1037,
-      1071,
-      1070,
       1068,
+      1069,
+      1070,
+      1037,
+      1036,
+      1071,
       1043,
       1045,
       91,
@@ -627,10 +765,10 @@ export const device_types: Record<number, DeviceType> = {
       96,
       3,
       6,
-      93,
+      29,
       86,
       89,
-      29
+      93
     ]
   },
   "123": {
@@ -729,9 +867,9 @@ export const device_types: Record<number, DeviceType> = {
     "label": "Water Freeze Detector",
     "clusters": [
       128,
-      29,
       3,
-      69
+      69,
+      29
     ]
   },
   "66": {
@@ -748,9 +886,9 @@ export const device_types: Record<number, DeviceType> = {
     "label": "Water Leak Detector",
     "clusters": [
       128,
-      29,
       3,
-      69
+      69,
+      29
     ]
   },
   "68": {
@@ -758,9 +896,9 @@ export const device_types: Record<number, DeviceType> = {
     "label": "Rain Sensor",
     "clusters": [
       128,
-      29,
       3,
-      69
+      69,
+      29
     ]
   },
   "144": {
@@ -778,8 +916,8 @@ export const device_types: Record<number, DeviceType> = {
     "label": "Thread Border Router",
     "clusters": [
       1106,
-      29,
-      53
+      53,
+      29
     ]
   },
   "4293984259": {
@@ -788,10 +926,10 @@ export const device_types: Record<number, DeviceType> = {
     "clusters": [
       768,
       257,
-      1026,
-      3,
-      4,
       98,
+      1026,
+      4,
+      3,
       6,
       8,
       29,
@@ -822,9 +960,9 @@ export const device_types: Record<number, DeviceType> = {
     "id": 119,
     "label": "Cook Surface",
     "clusters": [
+      86,
       1026,
       29,
-      86,
       6
     ]
   },
@@ -12325,6 +12463,66 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 1024,
         "cluster_id": 319683586,
         "label": "InstantaneousDemand",
+        "type": "uint"
+      }
+    }
+  },
+  "2820": {
+    "id": 2820,
+    "label": "DraftElectricalMeasurementCluster",
+    "attributes": {
+      "1285": {
+        "id": 1285,
+        "cluster_id": 2820,
+        "label": "RmsVoltage",
+        "type": "uint"
+      },
+      "1288": {
+        "id": 1288,
+        "cluster_id": 2820,
+        "label": "RmsCurrent",
+        "type": "uint"
+      },
+      "1291": {
+        "id": 1291,
+        "cluster_id": 2820,
+        "label": "ActivePower",
+        "type": "uint"
+      },
+      "1536": {
+        "id": 1536,
+        "cluster_id": 2820,
+        "label": "AcVoltageMultiplier",
+        "type": "uint"
+      },
+      "1537": {
+        "id": 1537,
+        "cluster_id": 2820,
+        "label": "AcVoltageDivisor",
+        "type": "uint"
+      },
+      "1538": {
+        "id": 1538,
+        "cluster_id": 2820,
+        "label": "AcCurrentMultiplier",
+        "type": "uint"
+      },
+      "1539": {
+        "id": 1539,
+        "cluster_id": 2820,
+        "label": "AcCurrentDivisor",
+        "type": "uint"
+      },
+      "1540": {
+        "id": 1540,
+        "cluster_id": 2820,
+        "label": "AcPowerMultiplier",
+        "type": "uint"
+      },
+      "1541": {
+        "id": 1541,
+        "cluster_id": 2820,
+        "label": "AcPowerDivisor",
         "type": "uint"
       }
     }
