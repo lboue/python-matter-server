@@ -363,6 +363,16 @@ export const device_types: Record<number, DeviceType> = {
       69
     ]
   },
+  "64": {
+    "id": 64,
+    "label": "IrrigationSystem",
+    "clusters": [
+      96,
+      3,
+      1028,
+      29
+    ]
+  },
   "262": {
     "id": 262,
     "label": "Light Sensor",
