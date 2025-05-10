@@ -236,240 +236,43 @@ class Camera(DeviceType, device_type=0x0142):
     """Camera."""
 
     clusters = {
-        #all_clusters.CameraAvSettingsUserLevelManagement,
-        #all_clusters.CameraAvStreamManagement,
+        all_clusters.CameraAvSettingsUserLevelManagement,
+        all_clusters.CameraAvStreamManagement,
         all_clusters.OccupancySensing,
-        #all_clusters.PushAvStreamTransport,
-        #all_clusters.TlsCertificateManagement,
-        #all_clusters.TlsClientManagement,
+        all_clusters.PushAvStreamTransport,
+        all_clusters.TlsCertificateManagement,
+        all_clusters.TlsClientManagement,
         all_clusters.TimeSynchronization,
-        #all_clusters.WebrtcTransportProvider,
         all_clusters.WebRTCTransportProvider,
-        #all_clusters.ZoneManagement,
+        all_clusters.ZoneManagement,
     }
 
 
-class Closurebase(DeviceType, device_type=0x0230):
-    """ClosureBase."""
+class Closure(DeviceType, device_type=0x0230):
+    """Closure."""
 
     clusters = {
-        all_clusters.Closure1stDimension,
-        all_clusters.Closure2ndDimension,
-        all_clusters.Closure3rdDimension,
-        all_clusters.Closure4thDimension,
-        all_clusters.Closure5thDimension,
         all_clusters.ClosureControl,
+        all_clusters.Descriptor,
         all_clusters.Groups,
         all_clusters.Identify,
-        all_clusters.ScenesManagement,
     }
 
 
-class Window(DeviceType, device_type=0x0231):
-    """Window."""
+class ClosurePanel(DeviceType, device_type=0x0231):
+    """Closure Panel."""
 
     clusters = {
-        all_clusters.Closure1stDimension,
-        all_clusters.Closure2ndDimension,
-        all_clusters.Closure3rdDimension,
-        all_clusters.Closure4thDimension,
-        all_clusters.Closure5thDimension,
-        all_clusters.ClosureControl,
-        all_clusters.Groups,
-        all_clusters.Identify,
-        all_clusters.ScenesManagement,
+        all_clusters.ClosureDimension,
+        all_clusters.Descriptor,
     }
 
 
-class Shutter(DeviceType, device_type=0x0232):
-    """Shutter."""
+class ClosureController(DeviceType, device_type=0x023E):
+    """Closure Controller."""
 
     clusters = {
-        all_clusters.Closure1stDimension,
-        all_clusters.Closure2ndDimension,
-        all_clusters.Closure3rdDimension,
-        all_clusters.Closure4thDimension,
-        all_clusters.Closure5thDimension,
-        all_clusters.ClosureControl,
-        all_clusters.Groups,
-        all_clusters.Identify,
-        all_clusters.ScenesManagement,
-    }
-
-
-class Shade(DeviceType, device_type=0x0233):
-    """Shade."""
-
-    clusters = {
-        all_clusters.Closure1stDimension,
-        all_clusters.Closure2ndDimension,
-        all_clusters.Closure3rdDimension,
-        all_clusters.Closure4thDimension,
-        all_clusters.Closure5thDimension,
-        all_clusters.ClosureControl,
-        all_clusters.Groups,
-        all_clusters.Identify,
-        all_clusters.ScenesManagement,
-    }
-
-
-class Curtain(DeviceType, device_type=0x0234):
-    """Curtain."""
-
-    clusters = {
-        all_clusters.Closure1stDimension,
-        all_clusters.Closure2ndDimension,
-        all_clusters.Closure3rdDimension,
-        all_clusters.Closure4thDimension,
-        all_clusters.Closure5thDimension,
-        all_clusters.ClosureControl,
-        all_clusters.Groups,
-        all_clusters.Identify,
-        all_clusters.ScenesManagement,
-    }
-
-
-class Blind(DeviceType, device_type=0x0235):
-    """Blind."""
-
-    clusters = {
-        all_clusters.Closure1stDimension,
-        all_clusters.Closure2ndDimension,
-        all_clusters.Closure3rdDimension,
-        all_clusters.Closure4thDimension,
-        all_clusters.Closure5thDimension,
-        all_clusters.ClosureControl,
-        all_clusters.Groups,
-        all_clusters.Identify,
-        all_clusters.ScenesManagement,
-    }
-
-
-class Screen(DeviceType, device_type=0x0236):
-    """Screen."""
-
-    clusters = {
-        all_clusters.Closure1stDimension,
-        all_clusters.Closure2ndDimension,
-        all_clusters.Closure3rdDimension,
-        all_clusters.Closure4thDimension,
-        all_clusters.Closure5thDimension,
-        all_clusters.ClosureControl,
-        all_clusters.Groups,
-        all_clusters.Identify,
-        all_clusters.ScenesManagement,
-    }
-
-
-class Awning(DeviceType, device_type=0x0237):
-    """Awning."""
-
-    clusters = {
-        all_clusters.Closure1stDimension,
-        all_clusters.Closure2ndDimension,
-        all_clusters.Closure3rdDimension,
-        all_clusters.Closure4thDimension,
-        all_clusters.Closure5thDimension,
-        all_clusters.ClosureControl,
-        all_clusters.Groups,
-        all_clusters.Identify,
-        all_clusters.ScenesManagement,
-    }
-
-
-class Pergola(DeviceType, device_type=0x0238):
-    """Pergola."""
-
-    clusters = {
-        all_clusters.Closure1stDimension,
-        all_clusters.Closure2ndDimension,
-        all_clusters.Closure3rdDimension,
-        all_clusters.Closure4thDimension,
-        all_clusters.Closure5thDimension,
-        all_clusters.ClosureControl,
-        all_clusters.Groups,
-        all_clusters.Identify,
-        all_clusters.ScenesManagement,
-    }
-
-
-class Door(DeviceType, device_type=0x0239):
-    """Door."""
-
-    clusters = {
-        all_clusters.Closure1stDimension,
-        all_clusters.Closure2ndDimension,
-        all_clusters.Closure3rdDimension,
-        all_clusters.Closure4thDimension,
-        all_clusters.Closure5thDimension,
-        all_clusters.ClosureControl,
-        all_clusters.Groups,
-        all_clusters.Identify,
-        all_clusters.ScenesManagement,
-    }
-
-
-class Garagedoor(DeviceType, device_type=0x023A):
-    """GarageDoor."""
-
-    clusters = {
-        all_clusters.Closure1stDimension,
-        all_clusters.Closure2ndDimension,
-        all_clusters.Closure3rdDimension,
-        all_clusters.Closure4thDimension,
-        all_clusters.Closure5thDimension,
-        all_clusters.ClosureControl,
-        all_clusters.Groups,
-        all_clusters.Identify,
-        all_clusters.ScenesManagement,
-    }
-
-
-class Gate(DeviceType, device_type=0x023B):
-    """Gate."""
-
-    clusters = {
-        all_clusters.Closure1stDimension,
-        all_clusters.Closure2ndDimension,
-        all_clusters.Closure3rdDimension,
-        all_clusters.Closure4thDimension,
-        all_clusters.Closure5thDimension,
-        all_clusters.ClosureControl,
-        all_clusters.Groups,
-        all_clusters.Identify,
-        all_clusters.ScenesManagement,
-    }
-
-
-class Barrier(DeviceType, device_type=0x023C):
-    """Barrier."""
-
-    clusters = {
-        all_clusters.Closure1stDimension,
-        all_clusters.Closure2ndDimension,
-        all_clusters.Closure3rdDimension,
-        all_clusters.Closure4thDimension,
-        all_clusters.Closure5thDimension,
-        all_clusters.ClosureControl,
-        all_clusters.Groups,
-        all_clusters.Identify,
-        all_clusters.ScenesManagement,
-    }
-
-
-class Cabinet(DeviceType, device_type=0x023D):
-    """Cabinet."""
-
-    clusters = {
-        all_clusters.Closure1stDimension,
-        all_clusters.Closure2ndDimension,
-        all_clusters.Closure3rdDimension,
-        all_clusters.Closure4thDimension,
-        all_clusters.Closure5thDimension,
-        all_clusters.ClosureControl,
-        all_clusters.Groups,
-        all_clusters.Identify,
-        all_clusters.ScenesManagement,
+        all_clusters.Binding,
     }
 
 
@@ -518,6 +321,44 @@ class ColorDimmerSwitch(DeviceType, device_type=0x0105):
         all_clusters.Identify,
         all_clusters.Descriptor,
         all_clusters.Binding,
+    }
+
+
+class ElectricalUtilityMeter(DeviceType, device_type=0x0511):
+    """Electrical Utility Meter."""
+
+    clusters = {
+        all_clusters.MeterIdentification,
+        all_clusters.TimeSynchronization,
+    }
+
+
+class MeterReferencePoint(DeviceType, device_type=0x0512):
+    """Meter Reference Point."""
+
+    clusters = {
+        all_clusters.Descriptor,
+        all_clusters.Identify,
+        all_clusters.TimeSynchronization,
+    }
+
+
+class ElectricalEnergyTariff(DeviceType, device_type=0x0513):
+    """Electrical Energy Tariff."""
+
+    clusters = {
+        all_clusters.CommodityPrice,
+        all_clusters.CommodityTariff,
+        all_clusters.Descriptor,
+    }
+
+
+class ElectricalMeter(DeviceType, device_type=0x0514):
+    """Electrical Meter."""
+
+    clusters = {
+        all_clusters.CommodityMetering,
+        all_clusters.Descriptor,
     }
 
 
@@ -1110,6 +951,16 @@ class SecondaryNetworkInterface(DeviceType, device_type=0x0019):
         all_clusters.ThreadNetworkDiagnostics,
     }
 
+
+'''
+class JointFabricAdministrator(DeviceType, device_type=0x0130):
+    """Joint Fabric Administrator."""
+
+    clusters = {
+        all_clusters.JointFabricDatastore,
+        all_clusters.JointFabricAdministrator,
+    }
+'''
 
 class Cooktop(DeviceType, device_type=0x0078):
     """Cooktop."""
