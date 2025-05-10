@@ -456,6 +456,18 @@ class FlowSensor(DeviceType, device_type=0x0306):
     }
 
 
+
+class IrrigationSystem(DeviceType, device_type=0x0040):
+    """IrrigationSystem."""
+
+    clusters = {
+        all_clusters.Identify,
+        all_clusters.Descriptor,
+        all_clusters.FlowMeasurement,
+        all_clusters.OperationalState,
+    }
+
+
 class HumiditySensor(DeviceType, device_type=0x0307):
     """Humidity Sensor."""
 
