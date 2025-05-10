@@ -28,8 +28,8 @@ export const device_types: Record<number, DeviceType> = {
     "clusters": [
       66,
       67,
-      28,
-      68
+      68,
+      28
     ]
   },
   "22": {
@@ -211,19 +211,22 @@ export const device_types: Record<number, DeviceType> = {
     "id": 322,
     "label": "Camera",
     "clusters": [
+      2049,
+      2050,
       1030,
       1360,
       1361,
       1362,
+      1363,
       1365,
       56
     ]
   },
   "560": {
     "id": 560,
-    "label": "ClosureBase",
+    "label": "Closure",
     "clusters": [
-      98,
+      29,
       3,
       260,
       4
@@ -231,132 +234,17 @@ export const device_types: Record<number, DeviceType> = {
   },
   "561": {
     "id": 561,
-    "label": "Window",
+    "label": "Closure Panel",
     "clusters": [
-      98,
-      3,
-      260,
-      4
+      29,
+      261
     ]
   },
-  "562": {
-    "id": 562,
-    "label": "Shutter",
+  "574": {
+    "id": 574,
+    "label": "Closure Controller",
     "clusters": [
-      98,
-      3,
-      260,
-      4
-    ]
-  },
-  "563": {
-    "id": 563,
-    "label": "Shade",
-    "clusters": [
-      98,
-      3,
-      260,
-      4
-    ]
-  },
-  "564": {
-    "id": 564,
-    "label": "Curtain",
-    "clusters": [
-      98,
-      3,
-      260,
-      4
-    ]
-  },
-  "565": {
-    "id": 565,
-    "label": "Blind",
-    "clusters": [
-      98,
-      3,
-      260,
-      4
-    ]
-  },
-  "566": {
-    "id": 566,
-    "label": "Screen",
-    "clusters": [
-      98,
-      3,
-      260,
-      4
-    ]
-  },
-  "567": {
-    "id": 567,
-    "label": "Awning",
-    "clusters": [
-      98,
-      3,
-      260,
-      4
-    ]
-  },
-  "568": {
-    "id": 568,
-    "label": "Pergola",
-    "clusters": [
-      98,
-      3,
-      260,
-      4
-    ]
-  },
-  "569": {
-    "id": 569,
-    "label": "Door",
-    "clusters": [
-      98,
-      3,
-      260,
-      4
-    ]
-  },
-  "570": {
-    "id": 570,
-    "label": "GarageDoor",
-    "clusters": [
-      98,
-      3,
-      260,
-      4
-    ]
-  },
-  "571": {
-    "id": 571,
-    "label": "Gate",
-    "clusters": [
-      98,
-      3,
-      260,
-      4
-    ]
-  },
-  "572": {
-    "id": 572,
-    "label": "Barrier",
-    "clusters": [
-      98,
-      3,
-      260,
-      4
-    ]
-  },
-  "573": {
-    "id": 573,
-    "label": "Cabinet",
-    "clusters": [
-      98,
-      3,
-      260,
-      4
+      30
     ]
   },
   "771": {
@@ -364,14 +252,14 @@ export const device_types: Record<number, DeviceType> = {
     "label": "Pump",
     "clusters": [
       512,
-      98,
-      1027,
-      4,
       1026,
-      6,
+      98,
       3,
-      8,
+      4,
+      1027,
       1028,
+      6,
+      8,
       29,
       30
     ]
@@ -401,6 +289,40 @@ export const device_types: Record<number, DeviceType> = {
       3,
       29,
       30
+    ]
+  },
+  "1297": {
+    "id": 1297,
+    "label": "Electrical Utility Meter",
+    "clusters": [
+      56,
+      2822
+    ]
+  },
+  "1298": {
+    "id": 1298,
+    "label": "Meter Reference Point",
+    "clusters": [
+      56,
+      3,
+      29
+    ]
+  },
+  "1299": {
+    "id": 1299,
+    "label": "Electrical Energy Tariff",
+    "clusters": [
+      1792,
+      29,
+      149
+    ]
+  },
+  "1300": {
+    "id": 1300,
+    "label": "Electrical Meter",
+    "clusters": [
+      29,
+      2823
     ]
   },
   "2112": {
@@ -436,9 +358,9 @@ export const device_types: Record<number, DeviceType> = {
     "id": 21,
     "label": "Contact Sensor",
     "clusters": [
+      29,
       3,
-      69,
-      29
+      69
     ]
   },
   "262": {
@@ -457,8 +379,8 @@ export const device_types: Record<number, DeviceType> = {
     "clusters": [
       3,
       29,
-      30,
-      1030
+      1030,
+      30
     ]
   },
   "770": {
@@ -474,8 +396,8 @@ export const device_types: Record<number, DeviceType> = {
     "id": 773,
     "label": "Pressure Sensor",
     "clusters": [
-      1027,
       3,
+      1027,
       29
     ]
   },
@@ -528,9 +450,9 @@ export const device_types: Record<number, DeviceType> = {
     "id": 514,
     "label": "Window Covering",
     "clusters": [
+      258,
       98,
       3,
-      258,
       4,
       29
     ]
@@ -548,10 +470,10 @@ export const device_types: Record<number, DeviceType> = {
     "id": 768,
     "label": "Heating/Cooling Unit",
     "clusters": [
-      98,
       514,
-      4,
+      98,
       3,
+      4,
       6,
       8,
       29,
@@ -589,14 +511,14 @@ export const device_types: Record<number, DeviceType> = {
       1283,
       1284,
       1285,
-      6,
-      1287,
       1286,
+      6,
+      1288,
       1289,
-      1290,
+      1287,
       1291,
       1292,
-      1288,
+      1290,
       1294,
       29
     ]
@@ -608,11 +530,11 @@ export const device_types: Record<number, DeviceType> = {
       1283,
       1284,
       1285,
-      6,
-      1287,
       1286,
-      1289,
+      6,
       1288,
+      1289,
+      1287,
       1291,
       29
     ]
@@ -624,17 +546,17 @@ export const device_types: Record<number, DeviceType> = {
       1283,
       1284,
       1285,
+      1286,
       6,
-      1287,
-      8,
+      1288,
       1289,
-      1290,
+      1287,
       1291,
       1292,
       1293,
       1294,
-      1286,
-      1288,
+      1290,
+      8,
       29,
       30
     ]
@@ -646,16 +568,16 @@ export const device_types: Record<number, DeviceType> = {
       1283,
       1284,
       1285,
+      1286,
       6,
-      1287,
-      8,
+      1288,
       1289,
-      1290,
+      1287,
       1291,
       1292,
-      1286,
+      1290,
       1294,
-      1288,
+      8,
       29,
       30
     ]
@@ -701,13 +623,13 @@ export const device_types: Record<number, DeviceType> = {
     "clusters": [
       513,
       98,
-      514,
+      3,
       516,
-      1029,
-      6,
       4,
       1026,
-      3,
+      514,
+      6,
+      1029,
       29
     ]
   },
@@ -746,12 +668,12 @@ export const device_types: Record<number, DeviceType> = {
       1029,
       1066,
       1067,
-      1068,
+      1036,
       1069,
       1070,
-      1037,
-      1036,
+      1068,
       1071,
+      1037,
       1043,
       1045,
       91,
@@ -915,9 +837,9 @@ export const device_types: Record<number, DeviceType> = {
     "id": 145,
     "label": "Thread Border Router",
     "clusters": [
+      29,
       1106,
-      53,
-      29
+      53
     ]
   },
   "4293984259": {
@@ -927,9 +849,9 @@ export const device_types: Record<number, DeviceType> = {
       768,
       257,
       98,
-      1026,
-      4,
       3,
+      4,
+      1026,
       6,
       8,
       29,
@@ -1377,6 +1299,12 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "TagList",
         "type": "Optional[List[Descriptor.Structs.SemanticTagStruct]]"
       },
+      "5": {
+        "id": 5,
+        "cluster_id": 29,
+        "label": "EndpointUniqueID",
+        "type": "Optional[str]"
+      },
       "65528": {
         "id": 65528,
         "cluster_id": 29,
@@ -1725,6 +1653,12 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "MaxPathsPerInvoke",
         "type": "uint"
       },
+      "24": {
+        "id": 24,
+        "cluster_id": 40,
+        "label": "ConfigurationVersion",
+        "type": "uint"
+      },
       "65528": {
         "id": 65528,
         "cluster_id": 40,
@@ -1964,6 +1898,12 @@ export const clusters: Record<number, ClusterDescription> = {
         "cluster_id": 45,
         "label": "TemperatureUnit",
         "type": "Optional[UnitLocalization.Enums.TempUnitEnum]"
+      },
+      "1": {
+        "id": 1,
+        "cluster_id": 45,
+        "label": "SupportedTemperatureUnits",
+        "type": "Optional[List[UnitLocalization.Enums.TempUnitEnum]]"
       },
       "65528": {
         "id": 65528,
@@ -3033,6 +2973,18 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "ActiveNetworkFaultsList",
         "type": "List[ThreadNetworkDiagnostics.Enums.NetworkFaultEnum]"
       },
+      "63": {
+        "id": 63,
+        "cluster_id": 53,
+        "label": "ExtAddress",
+        "type": "Union[Nullable, uint]"
+      },
+      "64": {
+        "id": 64,
+        "cluster_id": 53,
+        "label": "Rloc16",
+        "type": "Union[Nullable, uint]"
+      },
       "65528": {
         "id": 65528,
         "cluster_id": 53,
@@ -3488,6 +3440,12 @@ export const clusters: Record<number, ClusterDescription> = {
         "cluster_id": 57,
         "label": "ProductAppearance",
         "type": "Optional[BridgedDeviceBasicInformation.Structs.ProductAppearanceStruct]"
+      },
+      "24": {
+        "id": 24,
+        "cluster_id": 57,
+        "label": "ConfigurationVersion",
+        "type": "Optional[uint]"
       },
       "65528": {
         "id": 65528,
@@ -4233,18 +4191,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "CurrentMode",
         "type": "uint"
       },
-      "2": {
-        "id": 2,
-        "cluster_id": 73,
-        "label": "StartUpMode",
-        "type": "Union[NoneType, Nullable, uint]"
-      },
-      "3": {
-        "id": 3,
-        "cluster_id": 73,
-        "label": "OnMode",
-        "type": "Union[NoneType, Nullable, uint]"
-      },
       "65528": {
         "id": 65528,
         "cluster_id": 73,
@@ -4413,18 +4359,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "CurrentMode",
         "type": "uint"
       },
-      "2": {
-        "id": 2,
-        "cluster_id": 81,
-        "label": "StartUpMode",
-        "type": "Union[NoneType, Nullable, uint]"
-      },
-      "3": {
-        "id": 3,
-        "cluster_id": 81,
-        "label": "OnMode",
-        "type": "Union[NoneType, Nullable, uint]"
-      },
       "65528": {
         "id": 65528,
         "cluster_id": 81,
@@ -4472,18 +4406,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "cluster_id": 82,
         "label": "CurrentMode",
         "type": "uint"
-      },
-      "2": {
-        "id": 2,
-        "cluster_id": 82,
-        "label": "StartUpMode",
-        "type": "Union[NoneType, Nullable, uint]"
-      },
-      "3": {
-        "id": 3,
-        "cluster_id": 82,
-        "label": "OnMode",
-        "type": "Union[NoneType, Nullable, uint]"
       },
       "65528": {
         "id": 65528,
@@ -4814,18 +4736,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "cluster_id": 89,
         "label": "CurrentMode",
         "type": "uint"
-      },
-      "2": {
-        "id": 2,
-        "cluster_id": 89,
-        "label": "StartUpMode",
-        "type": "Union[NoneType, Nullable, uint]"
-      },
-      "3": {
-        "id": 3,
-        "cluster_id": 89,
-        "label": "OnMode",
-        "type": "Union[NoneType, Nullable, uint]"
       },
       "65528": {
         "id": 65528,
@@ -5361,12 +5271,6 @@ export const clusters: Record<number, ClusterDescription> = {
     "id": 98,
     "label": "ScenesManagement",
     "attributes": {
-      "0": {
-        "id": 0,
-        "cluster_id": 98,
-        "label": "LastConfiguredBy",
-        "type": "Union[NoneType, Nullable, uint]"
-      },
       "1": {
         "id": 1,
         "cluster_id": 98,
@@ -6035,85 +5939,61 @@ export const clusters: Record<number, ClusterDescription> = {
       }
     }
   },
-  "150": {
-    "id": 150,
-    "label": "DemandResponseLoadControl",
+  "149": {
+    "id": 149,
+    "label": "CommodityPrice",
     "attributes": {
       "0": {
         "id": 0,
-        "cluster_id": 150,
-        "label": "LoadControlPrograms",
-        "type": "List[DemandResponseLoadControl.Structs.LoadControlProgramStruct]"
+        "cluster_id": 149,
+        "label": "TariffUnit",
+        "type": "aenum TariffUnitEnum"
       },
       "1": {
         "id": 1,
-        "cluster_id": 150,
-        "label": "NumberOfLoadControlPrograms",
-        "type": "uint"
+        "cluster_id": 149,
+        "label": "Currency",
+        "type": "Union[Nullable, Globals.Structs.CurrencyStruct]"
       },
       "2": {
         "id": 2,
-        "cluster_id": 150,
-        "label": "Events",
-        "type": "List[DemandResponseLoadControl.Structs.LoadControlEventStruct]"
+        "cluster_id": 149,
+        "label": "CurrentPrice",
+        "type": "Union[Nullable, CommodityPrice.Structs.CommodityPriceStruct]"
       },
       "3": {
         "id": 3,
-        "cluster_id": 150,
-        "label": "ActiveEvents",
-        "type": "List[DemandResponseLoadControl.Structs.LoadControlEventStruct]"
-      },
-      "4": {
-        "id": 4,
-        "cluster_id": 150,
-        "label": "NumberOfEventsPerProgram",
-        "type": "uint"
-      },
-      "5": {
-        "id": 5,
-        "cluster_id": 150,
-        "label": "NumberOfTransitions",
-        "type": "uint"
-      },
-      "6": {
-        "id": 6,
-        "cluster_id": 150,
-        "label": "DefaultRandomStart",
-        "type": "uint"
-      },
-      "7": {
-        "id": 7,
-        "cluster_id": 150,
-        "label": "DefaultRandomDuration",
-        "type": "uint"
+        "cluster_id": 149,
+        "label": "PriceForecast",
+        "type": "Optional[List[CommodityPrice.Structs.CommodityPriceStruct]]"
       },
       "65528": {
         "id": 65528,
-        "cluster_id": 150,
+        "cluster_id": 149,
         "label": "GeneratedCommandList",
         "type": "List[uint]"
       },
       "65529": {
         "id": 65529,
-        "cluster_id": 150,
+        "cluster_id": 149,
         "label": "AcceptedCommandList",
         "type": "List[uint]"
       },
       "65531": {
         "id": 65531,
-        "cluster_id": 150,
+        "cluster_id": 149,
         "label": "AttributeList",
         "type": "List[uint]"
       },
       "65532": {
         "id": 65532,
-        "cluster_id": 150,
+        "cluster_id": 149,
         "label": "FeatureMap",
         "type": "uint"
       },
       "65533": {
         "id": 65533,
-        "cluster_id": 150,
+        "cluster_id": 149,
         "label": "ClusterRevision",
         "type": "uint"
       }
@@ -6683,6 +6563,60 @@ export const clusters: Record<number, ClusterDescription> = {
       }
     }
   },
+  "160": {
+    "id": 160,
+    "label": "ElectricalGridConditions",
+    "attributes": {
+      "0": {
+        "id": 0,
+        "cluster_id": 160,
+        "label": "LocalGenerationAvailable",
+        "type": "Union[Nullable, bool]"
+      },
+      "1": {
+        "id": 1,
+        "cluster_id": 160,
+        "label": "CurrentConditions",
+        "type": "Union[Nullable, ElectricalGridConditions.Structs.ElectricalGridConditionsStruct]"
+      },
+      "2": {
+        "id": 2,
+        "cluster_id": 160,
+        "label": "ForecastConditions",
+        "type": "Optional[List[ElectricalGridConditions.Structs.ElectricalGridConditionsStruct]]"
+      },
+      "65528": {
+        "id": 65528,
+        "cluster_id": 160,
+        "label": "GeneratedCommandList",
+        "type": "List[uint]"
+      },
+      "65529": {
+        "id": 65529,
+        "cluster_id": 160,
+        "label": "AcceptedCommandList",
+        "type": "List[uint]"
+      },
+      "65531": {
+        "id": 65531,
+        "cluster_id": 160,
+        "label": "AttributeList",
+        "type": "List[uint]"
+      },
+      "65532": {
+        "id": 65532,
+        "cluster_id": 160,
+        "label": "FeatureMap",
+        "type": "uint"
+      },
+      "65533": {
+        "id": 65533,
+        "cluster_id": 160,
+        "label": "ClusterRevision",
+        "type": "uint"
+      }
+    }
+  },
   "257": {
     "id": 257,
     "label": "DoorLock",
@@ -7191,36 +7125,6 @@ export const clusters: Record<number, ClusterDescription> = {
         "label": "OverallTarget",
         "type": "Union[Nullable, ClosureControl.Structs.OverallTargetStruct]"
       },
-      "5": {
-        "id": 5,
-        "cluster_id": 260,
-        "label": "RestingProcedure",
-        "type": "Optional[ClosureControl.Enums.RestingProcedureEnum]"
-      },
-      "6": {
-        "id": 6,
-        "cluster_id": 260,
-        "label": "TriggerCondition",
-        "type": "Optional[ClosureControl.Enums.TriggerConditionEnum]"
-      },
-      "7": {
-        "id": 7,
-        "cluster_id": 260,
-        "label": "TriggerPosition",
-        "type": "Optional[ClosureControl.Enums.TriggerPositionEnum]"
-      },
-      "8": {
-        "id": 8,
-        "cluster_id": 260,
-        "label": "WaitingDelay",
-        "type": "Optional[uint]"
-      },
-      "9": {
-        "id": 9,
-        "cluster_id": 260,
-        "label": "KickoffTimer",
-        "type": "Optional[uint]"
-      },
       "65528": {
         "id": 65528,
         "cluster_id": 260,
@@ -7248,6 +7152,108 @@ export const clusters: Record<number, ClusterDescription> = {
       "65533": {
         "id": 65533,
         "cluster_id": 260,
+        "label": "ClusterRevision",
+        "type": "uint"
+      }
+    }
+  },
+  "261": {
+    "id": 261,
+    "label": "ClosureDimension",
+    "attributes": {
+      "0": {
+        "id": 0,
+        "cluster_id": 261,
+        "label": "CurrentState",
+        "type": "Union[Nullable, ClosureDimension.Structs.CurrentStateStruct]"
+      },
+      "1": {
+        "id": 1,
+        "cluster_id": 261,
+        "label": "Target",
+        "type": "Union[Nullable, ClosureDimension.Structs.TargetStruct]"
+      },
+      "2": {
+        "id": 2,
+        "cluster_id": 261,
+        "label": "Resolution",
+        "type": "Optional[uint]"
+      },
+      "3": {
+        "id": 3,
+        "cluster_id": 261,
+        "label": "StepValue",
+        "type": "Optional[uint]"
+      },
+      "4": {
+        "id": 4,
+        "cluster_id": 261,
+        "label": "Unit",
+        "type": "Optional[ClosureDimension.Enums.ClosureUnitEnum]"
+      },
+      "5": {
+        "id": 5,
+        "cluster_id": 261,
+        "label": "UnitRange",
+        "type": "Union[NoneType, Nullable, ClosureDimension.Structs.UnitRangeStruct]"
+      },
+      "6": {
+        "id": 6,
+        "cluster_id": 261,
+        "label": "LimitRange",
+        "type": "Optional[ClosureDimension.Structs.RangePercent100thsStruct]"
+      },
+      "7": {
+        "id": 7,
+        "cluster_id": 261,
+        "label": "TranslationDirection",
+        "type": "Optional[ClosureDimension.Enums.TranslationDirectionEnum]"
+      },
+      "8": {
+        "id": 8,
+        "cluster_id": 261,
+        "label": "RotationAxis",
+        "type": "Optional[ClosureDimension.Enums.RotationAxisEnum]"
+      },
+      "9": {
+        "id": 9,
+        "cluster_id": 261,
+        "label": "Overflow",
+        "type": "Optional[ClosureDimension.Enums.OverflowEnum]"
+      },
+      "10": {
+        "id": 10,
+        "cluster_id": 261,
+        "label": "ModulationType",
+        "type": "Optional[ClosureDimension.Enums.ModulationTypeEnum]"
+      },
+      "65528": {
+        "id": 65528,
+        "cluster_id": 261,
+        "label": "GeneratedCommandList",
+        "type": "List[uint]"
+      },
+      "65529": {
+        "id": 65529,
+        "cluster_id": 261,
+        "label": "AcceptedCommandList",
+        "type": "List[uint]"
+      },
+      "65531": {
+        "id": 65531,
+        "cluster_id": 261,
+        "label": "AttributeList",
+        "type": "List[uint]"
+      },
+      "65532": {
+        "id": 65532,
+        "cluster_id": 261,
+        "label": "FeatureMap",
+        "type": "uint"
+      },
+      "65533": {
+        "id": 65533,
+        "cluster_id": 261,
         "label": "ClusterRevision",
         "type": "uint"
       }
@@ -9043,7 +9049,7 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 9,
         "cluster_id": 1036,
         "label": "MeasurementMedium",
-        "type": "Optional[CarbonMonoxideConcentrationMeasurement.Enums.MeasurementMediumEnum]"
+        "type": "aenum MeasurementMediumEnum"
       },
       "10": {
         "id": 10,
@@ -9145,7 +9151,7 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 9,
         "cluster_id": 1037,
         "label": "MeasurementMedium",
-        "type": "Optional[CarbonDioxideConcentrationMeasurement.Enums.MeasurementMediumEnum]"
+        "type": "aenum MeasurementMediumEnum"
       },
       "10": {
         "id": 10,
@@ -9247,7 +9253,7 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 9,
         "cluster_id": 1043,
         "label": "MeasurementMedium",
-        "type": "Optional[NitrogenDioxideConcentrationMeasurement.Enums.MeasurementMediumEnum]"
+        "type": "aenum MeasurementMediumEnum"
       },
       "10": {
         "id": 10,
@@ -9349,7 +9355,7 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 9,
         "cluster_id": 1045,
         "label": "MeasurementMedium",
-        "type": "Optional[OzoneConcentrationMeasurement.Enums.MeasurementMediumEnum]"
+        "type": "aenum MeasurementMediumEnum"
       },
       "10": {
         "id": 10,
@@ -9451,7 +9457,7 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 9,
         "cluster_id": 1066,
         "label": "MeasurementMedium",
-        "type": "Optional[Pm25ConcentrationMeasurement.Enums.MeasurementMediumEnum]"
+        "type": "aenum MeasurementMediumEnum"
       },
       "10": {
         "id": 10,
@@ -9553,7 +9559,7 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 9,
         "cluster_id": 1067,
         "label": "MeasurementMedium",
-        "type": "Optional[FormaldehydeConcentrationMeasurement.Enums.MeasurementMediumEnum]"
+        "type": "aenum MeasurementMediumEnum"
       },
       "10": {
         "id": 10,
@@ -9655,7 +9661,7 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 9,
         "cluster_id": 1068,
         "label": "MeasurementMedium",
-        "type": "Optional[Pm1ConcentrationMeasurement.Enums.MeasurementMediumEnum]"
+        "type": "aenum MeasurementMediumEnum"
       },
       "10": {
         "id": 10,
@@ -9757,7 +9763,7 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 9,
         "cluster_id": 1069,
         "label": "MeasurementMedium",
-        "type": "Optional[Pm10ConcentrationMeasurement.Enums.MeasurementMediumEnum]"
+        "type": "aenum MeasurementMediumEnum"
       },
       "10": {
         "id": 10,
@@ -9859,7 +9865,7 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 9,
         "cluster_id": 1070,
         "label": "MeasurementMedium",
-        "type": "Optional[TotalVolatileOrganicCompoundsConcentrationMeasurement.Enums.MeasurementMediumEnum]"
+        "type": "aenum MeasurementMediumEnum"
       },
       "10": {
         "id": 10,
@@ -9961,7 +9967,7 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 9,
         "cluster_id": 1071,
         "label": "MeasurementMedium",
-        "type": "Optional[RadonConcentrationMeasurement.Enums.MeasurementMediumEnum]"
+        "type": "aenum MeasurementMediumEnum"
       },
       "10": {
         "id": 10,
@@ -9996,6 +10002,54 @@ export const clusters: Record<number, ClusterDescription> = {
       "65533": {
         "id": 65533,
         "cluster_id": 1071,
+        "label": "ClusterRevision",
+        "type": "uint"
+      }
+    }
+  },
+  "1072": {
+    "id": 1072,
+    "label": "SoilMeasurement",
+    "attributes": {
+      "0": {
+        "id": 0,
+        "cluster_id": 1072,
+        "label": "SoilMoistureMeasurementLimits",
+        "type": "Globals.Structs.MeasurementAccuracyStruct"
+      },
+      "1": {
+        "id": 1,
+        "cluster_id": 1072,
+        "label": "SoilMoistureMeasuredValue",
+        "type": "Union[Nullable, uint]"
+      },
+      "65528": {
+        "id": 65528,
+        "cluster_id": 1072,
+        "label": "GeneratedCommandList",
+        "type": "List[uint]"
+      },
+      "65529": {
+        "id": 65529,
+        "cluster_id": 1072,
+        "label": "AcceptedCommandList",
+        "type": "List[uint]"
+      },
+      "65531": {
+        "id": 65531,
+        "cluster_id": 1072,
+        "label": "AttributeList",
+        "type": "List[uint]"
+      },
+      "65532": {
+        "id": 65532,
+        "cluster_id": 1072,
+        "label": "FeatureMap",
+        "type": "uint"
+      },
+      "65533": {
+        "id": 65533,
+        "cluster_id": 1072,
         "label": "ClusterRevision",
         "type": "uint"
       }
@@ -10861,7 +10915,7 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 7,
         "cluster_id": 1295,
         "label": "BlockUnrated",
-        "type": "bool"
+        "type": "Optional[bool]"
       },
       "65528": {
         "id": 65528,
@@ -10998,7 +11052,7 @@ export const clusters: Record<number, ClusterDescription> = {
       "0": {
         "id": 0,
         "cluster_id": 1361,
-        "label": "MaxConcurrentVideoEncoders",
+        "label": "MaxConcurrentEncoders",
         "type": "Optional[uint]"
       },
       "1": {
@@ -11016,7 +11070,7 @@ export const clusters: Record<number, ClusterDescription> = {
       "3": {
         "id": 3,
         "cluster_id": 1361,
-        "label": "NightVisionCapable",
+        "label": "NightVisionUsesInfrared",
         "type": "Optional[bool]"
       },
       "4": {
@@ -11035,7 +11089,7 @@ export const clusters: Record<number, ClusterDescription> = {
         "id": 6,
         "cluster_id": 1361,
         "label": "MaxContentBufferSize",
-        "type": "Optional[uint]"
+        "type": "uint"
       },
       "7": {
         "id": 7,
@@ -11058,8 +11112,8 @@ export const clusters: Record<number, ClusterDescription> = {
       "10": {
         "id": 10,
         "cluster_id": 1361,
-        "label": "SupportedSnapshotParams",
-        "type": "Optional[List[CameraAvStreamManagement.Structs.SnapshotParamsStruct]]"
+        "label": "SnapshotCapabilities",
+        "type": "Optional[List[CameraAvStreamManagement.Structs.SnapshotCapabilitiesStruct]]"
       },
       "11": {
         "id": 11,
@@ -11082,8 +11136,8 @@ export const clusters: Record<number, ClusterDescription> = {
       "14": {
         "id": 14,
         "cluster_id": 1361,
-        "label": "FabricsUsingCamera",
-        "type": "List[uint]"
+        "label": "SupportedStreamUsages",
+        "type": "List[CameraAvStreamManagement.Enums.StreamUsageEnum]"
       },
       "15": {
         "id": 15,
@@ -11454,20 +11508,14 @@ export const clusters: Record<number, ClusterDescription> = {
       "0": {
         "id": 0,
         "cluster_id": 1365,
-        "label": "SupportedContainerFormats",
-        "type": "uint"
+        "label": "SupportedFormats",
+        "type": "List[PushAvStreamTransport.Structs.SupportedFormatStruct]"
       },
       "1": {
         "id": 1,
         "cluster_id": 1365,
-        "label": "SupportedIngestMethods",
-        "type": "uint"
-      },
-      "2": {
-        "id": 2,
-        "cluster_id": 1365,
         "label": "CurrentConnections",
-        "type": "List[uint]"
+        "type": "List[PushAvStreamTransport.Structs.TransportConfigurationStruct]"
       },
       "65528": {
         "id": 65528,
@@ -11514,7 +11562,7 @@ export const clusters: Record<number, ClusterDescription> = {
       "1": {
         "id": 1,
         "cluster_id": 1366,
-        "label": "ActiveChimeID",
+        "label": "SelectedChime",
         "type": "uint"
       },
       "2": {
@@ -11550,6 +11598,156 @@ export const clusters: Record<number, ClusterDescription> = {
       "65533": {
         "id": 65533,
         "cluster_id": 1366,
+        "label": "ClusterRevision",
+        "type": "uint"
+      }
+    }
+  },
+  "1792": {
+    "id": 1792,
+    "label": "CommodityTariff",
+    "attributes": {
+      "0": {
+        "id": 0,
+        "cluster_id": 1792,
+        "label": "TariffInfo",
+        "type": "Union[Nullable, CommodityTariff.Structs.TariffInformationStruct]"
+      },
+      "1": {
+        "id": 1,
+        "cluster_id": 1792,
+        "label": "TariffUnit",
+        "type": "Union[Nullable, Globals.Enums.TariffUnitEnum]"
+      },
+      "2": {
+        "id": 2,
+        "cluster_id": 1792,
+        "label": "StartDate",
+        "type": "Union[Nullable, uint]"
+      },
+      "3": {
+        "id": 3,
+        "cluster_id": 1792,
+        "label": "DayEntries",
+        "type": "Union[Nullable, List[CommodityTariff.Structs.DayEntryStruct]]"
+      },
+      "4": {
+        "id": 4,
+        "cluster_id": 1792,
+        "label": "DayPatterns",
+        "type": "Union[Nullable, List[CommodityTariff.Structs.DayPatternStruct]]"
+      },
+      "5": {
+        "id": 5,
+        "cluster_id": 1792,
+        "label": "CalendarPeriods",
+        "type": "Union[Nullable, List[CommodityTariff.Structs.CalendarPeriodStruct]]"
+      },
+      "6": {
+        "id": 6,
+        "cluster_id": 1792,
+        "label": "IndividualDays",
+        "type": "Union[Nullable, List[CommodityTariff.Structs.DayStruct]]"
+      },
+      "7": {
+        "id": 7,
+        "cluster_id": 1792,
+        "label": "CurrentDay",
+        "type": "Union[Nullable, CommodityTariff.Structs.DayStruct]"
+      },
+      "8": {
+        "id": 8,
+        "cluster_id": 1792,
+        "label": "NextDay",
+        "type": "Union[Nullable, CommodityTariff.Structs.DayStruct]"
+      },
+      "9": {
+        "id": 9,
+        "cluster_id": 1792,
+        "label": "CurrentDayEntry",
+        "type": "Union[Nullable, CommodityTariff.Structs.DayEntryStruct]"
+      },
+      "10": {
+        "id": 10,
+        "cluster_id": 1792,
+        "label": "CurrentDayEntryDate",
+        "type": "Union[Nullable, uint]"
+      },
+      "11": {
+        "id": 11,
+        "cluster_id": 1792,
+        "label": "NextDayEntry",
+        "type": "Union[Nullable, CommodityTariff.Structs.DayEntryStruct]"
+      },
+      "12": {
+        "id": 12,
+        "cluster_id": 1792,
+        "label": "NextDayEntryDate",
+        "type": "Union[Nullable, uint]"
+      },
+      "13": {
+        "id": 13,
+        "cluster_id": 1792,
+        "label": "TariffComponents",
+        "type": "Union[Nullable, List[CommodityTariff.Structs.TariffComponentStruct]]"
+      },
+      "14": {
+        "id": 14,
+        "cluster_id": 1792,
+        "label": "TariffPeriods",
+        "type": "Union[Nullable, List[CommodityTariff.Structs.TariffPeriodStruct]]"
+      },
+      "15": {
+        "id": 15,
+        "cluster_id": 1792,
+        "label": "CurrentTariffComponents",
+        "type": "Union[Nullable, List[CommodityTariff.Structs.TariffComponentStruct]]"
+      },
+      "16": {
+        "id": 16,
+        "cluster_id": 1792,
+        "label": "NextTariffComponents",
+        "type": "Union[Nullable, List[CommodityTariff.Structs.TariffComponentStruct]]"
+      },
+      "17": {
+        "id": 17,
+        "cluster_id": 1792,
+        "label": "DefaultRandomizationOffset",
+        "type": "Union[NoneType, Nullable, int]"
+      },
+      "18": {
+        "id": 18,
+        "cluster_id": 1792,
+        "label": "DefaultRandomizationType",
+        "type": "Union[NoneType, Nullable, CommodityTariff.Enums.DayEntryRandomizationTypeEnum]"
+      },
+      "65528": {
+        "id": 65528,
+        "cluster_id": 1792,
+        "label": "GeneratedCommandList",
+        "type": "List[uint]"
+      },
+      "65529": {
+        "id": 65529,
+        "cluster_id": 1792,
+        "label": "AcceptedCommandList",
+        "type": "List[uint]"
+      },
+      "65531": {
+        "id": 65531,
+        "cluster_id": 1792,
+        "label": "AttributeList",
+        "type": "List[uint]"
+      },
+      "65532": {
+        "id": 65532,
+        "cluster_id": 1792,
+        "label": "FeatureMap",
+        "type": "uint"
+      },
+      "65533": {
+        "id": 65533,
+        "cluster_id": 1792,
         "label": "ClusterRevision",
         "type": "uint"
       }
@@ -11658,8 +11856,8 @@ export const clusters: Record<number, ClusterDescription> = {
       "1": {
         "id": 1,
         "cluster_id": 2049,
-        "label": "CurrentRootCertificates",
-        "type": "uint"
+        "label": "ProvisionedRootCertificates",
+        "type": "List[TlsCertificateManagement.Structs.TLSCertStruct]"
       },
       "2": {
         "id": 2,
@@ -11670,8 +11868,8 @@ export const clusters: Record<number, ClusterDescription> = {
       "3": {
         "id": 3,
         "cluster_id": 2049,
-        "label": "CurrentClientCertificates",
-        "type": "uint"
+        "label": "ProvisionedClientCertificates",
+        "type": "List[TlsCertificateManagement.Structs.TLSClientCertificateDetailStruct]"
       },
       "65528": {
         "id": 65528,
@@ -11700,6 +11898,174 @@ export const clusters: Record<number, ClusterDescription> = {
       "65533": {
         "id": 65533,
         "cluster_id": 2049,
+        "label": "ClusterRevision",
+        "type": "uint"
+      }
+    }
+  },
+  "2050": {
+    "id": 2050,
+    "label": "TlsClientManagement",
+    "attributes": {
+      "0": {
+        "id": 0,
+        "cluster_id": 2050,
+        "label": "MaxProvisioned",
+        "type": "uint"
+      },
+      "1": {
+        "id": 1,
+        "cluster_id": 2050,
+        "label": "ProvisionedEndpoints",
+        "type": "List[TlsClientManagement.Structs.TLSEndpointStruct]"
+      },
+      "65528": {
+        "id": 65528,
+        "cluster_id": 2050,
+        "label": "GeneratedCommandList",
+        "type": "List[uint]"
+      },
+      "65529": {
+        "id": 65529,
+        "cluster_id": 2050,
+        "label": "AcceptedCommandList",
+        "type": "List[uint]"
+      },
+      "65531": {
+        "id": 65531,
+        "cluster_id": 2050,
+        "label": "AttributeList",
+        "type": "List[uint]"
+      },
+      "65532": {
+        "id": 65532,
+        "cluster_id": 2050,
+        "label": "FeatureMap",
+        "type": "uint"
+      },
+      "65533": {
+        "id": 65533,
+        "cluster_id": 2050,
+        "label": "ClusterRevision",
+        "type": "uint"
+      }
+    }
+  },
+  "2822": {
+    "id": 2822,
+    "label": "MeterIdentification",
+    "attributes": {
+      "0": {
+        "id": 0,
+        "cluster_id": 2822,
+        "label": "MeterType",
+        "type": "Union[Nullable, MeterIdentification.Enums.MeterTypeEnum]"
+      },
+      "1": {
+        "id": 1,
+        "cluster_id": 2822,
+        "label": "PointOfDelivery",
+        "type": "Union[Nullable, str]"
+      },
+      "2": {
+        "id": 2,
+        "cluster_id": 2822,
+        "label": "MeterSerialNumber",
+        "type": "Union[Nullable, str]"
+      },
+      "3": {
+        "id": 3,
+        "cluster_id": 2822,
+        "label": "ProtocolVersion",
+        "type": "Union[NoneType, Nullable, str]"
+      },
+      "4": {
+        "id": 4,
+        "cluster_id": 2822,
+        "label": "PowerThreshold",
+        "type": "Union[NoneType, Nullable, Globals.Structs.PowerThresholdStruct]"
+      },
+      "65528": {
+        "id": 65528,
+        "cluster_id": 2822,
+        "label": "GeneratedCommandList",
+        "type": "List[uint]"
+      },
+      "65529": {
+        "id": 65529,
+        "cluster_id": 2822,
+        "label": "AcceptedCommandList",
+        "type": "List[uint]"
+      },
+      "65531": {
+        "id": 65531,
+        "cluster_id": 2822,
+        "label": "AttributeList",
+        "type": "List[uint]"
+      },
+      "65532": {
+        "id": 65532,
+        "cluster_id": 2822,
+        "label": "FeatureMap",
+        "type": "uint"
+      },
+      "65533": {
+        "id": 65533,
+        "cluster_id": 2822,
+        "label": "ClusterRevision",
+        "type": "uint"
+      }
+    }
+  },
+  "2823": {
+    "id": 2823,
+    "label": "CommodityMetering",
+    "attributes": {
+      "0": {
+        "id": 0,
+        "cluster_id": 2823,
+        "label": "MeteredQuantity",
+        "type": "Union[Nullable, List[CommodityMetering.Structs.MeteredQuantityStruct]]"
+      },
+      "1": {
+        "id": 1,
+        "cluster_id": 2823,
+        "label": "MeteredQuantityTimestamp",
+        "type": "Union[Nullable, uint]"
+      },
+      "2": {
+        "id": 2,
+        "cluster_id": 2823,
+        "label": "MeasurementType",
+        "type": "Union[Nullable, CommodityMetering.Enums.MeasurementTypeEnum]"
+      },
+      "65528": {
+        "id": 65528,
+        "cluster_id": 2823,
+        "label": "GeneratedCommandList",
+        "type": "List[uint]"
+      },
+      "65529": {
+        "id": 65529,
+        "cluster_id": 2823,
+        "label": "AcceptedCommandList",
+        "type": "List[uint]"
+      },
+      "65531": {
+        "id": 65531,
+        "cluster_id": 2823,
+        "label": "AttributeList",
+        "type": "List[uint]"
+      },
+      "65532": {
+        "id": 65532,
+        "cluster_id": 2823,
+        "label": "FeatureMap",
+        "type": "uint"
+      },
+      "65533": {
+        "id": 65533,
+        "cluster_id": 2823,
         "label": "ClusterRevision",
         "type": "uint"
       }
