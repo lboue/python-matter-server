@@ -90,6 +90,11 @@ class DeviceType:
 
         print(name, device["deviceId"]["#text"])
 
+        # Skip devices without clusters
+        if "clusters" not in device:
+            print(f"  Skipping {name} - no clusters defined")
+            continue
+
         clusters = device["clusters"]["include"]
         if not isinstance(clusters, list):
             clusters = [clusters]
