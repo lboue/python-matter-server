@@ -242,8 +242,8 @@ class Intercom(DeviceType, device_type=0x0140):
         all_clusters.PowerSource,
         all_clusters.TlsCertificateManagement,
         all_clusters.TimeSynchronization,
-        all_clusters.WebrtcTransportProvider,
-        all_clusters.WebrtcTransportRequestor,
+        all_clusters.WebRTCTransportProvider,
+        all_clusters.WebRTCTransportRequestor,
     }
 
 
@@ -258,8 +258,8 @@ class AudioDoorbell(DeviceType, device_type=0x0141):
         all_clusters.TlsCertificateManagement,
         all_clusters.TlsClientManagement,
         all_clusters.TimeSynchronization,
-        all_clusters.WebrtcTransportProvider,
-        all_clusters.WebrtcTransportRequestor,
+        all_clusters.WebRTCTransportProvider,
+        all_clusters.WebRTCTransportRequestor,
     }
 
 
@@ -276,8 +276,8 @@ class Camera(DeviceType, device_type=0x0142):
         all_clusters.TlsCertificateManagement,
         all_clusters.TlsClientManagement,
         all_clusters.TimeSynchronization,
-        all_clusters.WebrtcTransportProvider,
-        all_clusters.WebrtcTransportRequestor,
+        all_clusters.WebRTCTransportProvider,
+        all_clusters.WebRTCTransportRequestor,
         all_clusters.ZoneManagement,
     }
 
@@ -309,7 +309,7 @@ class CameraController(DeviceType, device_type=0x0147):
     """Camera Controller."""
 
     clusters = {
-        all_clusters.WebrtcTransportRequestor,
+        all_clusters.WebRTCTransportRequestor,
     }
 
 
