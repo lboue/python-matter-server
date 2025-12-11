@@ -41,7 +41,7 @@ def generate_device_type_description(device_type: DeviceType) -> dict[str, Any]:
     return {
         "id": device_type.device_type,
         "label": (device_type.__doc__ or device_type.__name__).replace(".", ""),
-        "clusters": {x.id for x in device_type.clusters},
+        "clusters": sorted({x.id for x in device_type.clusters}),
     }
 
 
