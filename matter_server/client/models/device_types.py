@@ -154,30 +154,6 @@ class DimmableLight(DeviceType, device_type=0x0101):
     }
 
 
-class MountedOnOffControl(DeviceType, device_type=0x010F):
-    """Mounted On/Off Control."""
-
-    clusters = {
-        all_clusters.Groups,
-        all_clusters.Identify,
-        all_clusters.LevelControl,
-        all_clusters.OnOff,
-        all_clusters.ScenesManagement,
-    }
-
-
-class MountedDimmableLoadControl(DeviceType, device_type=0x0110):
-    """Mounted Dimmable Load Control."""
-
-    clusters = {
-        all_clusters.Groups,
-        all_clusters.Identify,
-        all_clusters.LevelControl,
-        all_clusters.OnOff,
-        all_clusters.ScenesManagement,
-    }
-
-
 class ColorTemperatureLight(DeviceType, device_type=0x010C):
     """Color Temperature Light."""
 
@@ -232,6 +208,148 @@ class DimmablePlugInUnit(DeviceType, device_type=0x010B):
     }
 
 
+class MountedOnOffControl(DeviceType, device_type=0x010F):
+    """Mounted On/Off Control."""
+
+    clusters = {
+        all_clusters.Groups,
+        all_clusters.Identify,
+        all_clusters.LevelControl,
+        all_clusters.OnOff,
+        all_clusters.ScenesManagement,
+    }
+
+
+class MountedDimmableLoadControl(DeviceType, device_type=0x0110):
+    """Mounted Dimmable Load Control."""
+
+    clusters = {
+        all_clusters.Groups,
+        all_clusters.Identify,
+        all_clusters.LevelControl,
+        all_clusters.OnOff,
+        all_clusters.ScenesManagement,
+    }
+
+
+class Intercom(DeviceType, device_type=0x0140):
+    """Intercom."""
+
+    clusters = {
+        all_clusters.CameraAvSettingsUserLevelManagement,
+        all_clusters.CameraAvStreamManagement,
+        all_clusters.Identify,
+        all_clusters.PowerSource,
+        all_clusters.TlsCertificateManagement,
+        all_clusters.TimeSynchronization,
+        all_clusters.WebrtcTransportProvider,
+        all_clusters.WebrtcTransportRequestor,
+    }
+
+
+class AudioDoorbell(DeviceType, device_type=0x0141):
+    """Audio Doorbell."""
+
+    clusters = {
+        all_clusters.CameraAvStreamManagement,
+        all_clusters.Identify,
+        all_clusters.PowerSource,
+        all_clusters.PushAvStreamTransport,
+        all_clusters.TlsCertificateManagement,
+        all_clusters.TlsClientManagement,
+        all_clusters.TimeSynchronization,
+        all_clusters.WebrtcTransportProvider,
+        all_clusters.WebrtcTransportRequestor,
+    }
+
+
+class Camera(DeviceType, device_type=0x0142):
+    """Camera."""
+
+    clusters = {
+        all_clusters.CameraAvSettingsUserLevelManagement,
+        all_clusters.CameraAvStreamManagement,
+        all_clusters.Identify,
+        all_clusters.OccupancySensing,
+        all_clusters.PowerSource,
+        all_clusters.PushAvStreamTransport,
+        all_clusters.TlsCertificateManagement,
+        all_clusters.TlsClientManagement,
+        all_clusters.TimeSynchronization,
+        all_clusters.WebrtcTransportProvider,
+        all_clusters.WebrtcTransportRequestor,
+        all_clusters.ZoneManagement,
+    }
+
+
+class SnapshotCamera(DeviceType, device_type=0x0145):
+    """Snapshot Camera."""
+
+    clusters = {
+        all_clusters.CameraAvSettingsUserLevelManagement,
+        all_clusters.CameraAvStreamManagement,
+        all_clusters.Identify,
+        all_clusters.OccupancySensing,
+        all_clusters.PowerSource,
+        all_clusters.TimeSynchronization,
+        all_clusters.ZoneManagement,
+    }
+
+
+class Chime(DeviceType, device_type=0x0146):
+    """Chime."""
+
+    clusters = {
+        all_clusters.Chime,
+        all_clusters.Identify,
+    }
+
+
+class CameraController(DeviceType, device_type=0x0147):
+    """Camera Controller."""
+
+    clusters = {
+        all_clusters.WebrtcTransportRequestor,
+    }
+
+
+class Doorbell(DeviceType, device_type=0x0148):
+    """Doorbell."""
+
+    clusters = {
+        all_clusters.Binding,
+        all_clusters.Identify,
+        all_clusters.Switch,
+    }
+
+
+class Closure(DeviceType, device_type=0x0230):
+    """Closure."""
+
+    clusters = {
+        all_clusters.ClosureControl,
+        all_clusters.Descriptor,
+        all_clusters.Identify,
+    }
+
+
+class ClosurePanel(DeviceType, device_type=0x0231):
+    """Closure Panel."""
+
+    clusters = {
+        all_clusters.ClosureDimension,
+        all_clusters.Descriptor,
+    }
+
+
+class ClosureController(DeviceType, device_type=0x023E):
+    """Closure Controller."""
+
+    clusters = {
+        all_clusters.Binding,
+    }
+
+
 class Pump(DeviceType, device_type=0x0303):
     """Pump."""
 
@@ -277,6 +395,44 @@ class ColorDimmerSwitch(DeviceType, device_type=0x0105):
         all_clusters.Identify,
         all_clusters.Descriptor,
         all_clusters.Binding,
+    }
+
+
+class ElectricalUtilityMeter(DeviceType, device_type=0x0511):
+    """Electrical Utility Meter."""
+
+    clusters = {
+        all_clusters.MeterIdentification,
+        all_clusters.TimeSynchronization,
+    }
+
+
+class MeterReferencePoint(DeviceType, device_type=0x0512):
+    """Meter Reference Point."""
+
+    clusters = {
+        all_clusters.Descriptor,
+        all_clusters.Identify,
+        all_clusters.TimeSynchronization,
+    }
+
+
+class ElectricalEnergyTariff(DeviceType, device_type=0x0513):
+    """Electrical Energy Tariff."""
+
+    clusters = {
+        all_clusters.CommodityPrice,
+        all_clusters.CommodityTariff,
+        all_clusters.Descriptor,
+    }
+
+
+class ElectricalMeter(DeviceType, device_type=0x0514):
+    """Electrical Meter."""
+
+    clusters = {
+        all_clusters.CommodityMetering,
+        all_clusters.Descriptor,
     }
 
 
@@ -433,21 +589,6 @@ class WindowCoveringController(DeviceType, device_type=0x0203):
         all_clusters.Identify,
         all_clusters.Descriptor,
         all_clusters.Binding,
-    }
-
-
-class HeatingCoolingUnit(DeviceType, device_type=0x0300):
-    """Heating/Cooling Unit."""
-
-    clusters = {
-        all_clusters.Identify,
-        all_clusters.Descriptor,
-        all_clusters.Binding,
-        all_clusters.Groups,
-        all_clusters.ScenesManagement,
-        all_clusters.FanControl,
-        all_clusters.LevelControl,
-        all_clusters.OnOff,
     }
 
 
@@ -870,6 +1011,15 @@ class SecondaryNetworkInterface(DeviceType, device_type=0x0019):
     }
 
 
+class JointFabricAdministrator(DeviceType, device_type=0x0130):
+    """Joint Fabric Administrator."""
+
+    clusters = {
+        all_clusters.JointFabricDatastore,
+        all_clusters.JointFabricAdministrator,
+    }
+
+
 class Cooktop(DeviceType, device_type=0x0078):
     """Cooktop."""
 
@@ -907,7 +1057,6 @@ class DeviceEnergyManagement(DeviceType, device_type=0x050D):
     """Device Energy Management."""
 
     clusters = {
-        all_clusters.Descriptor,
         all_clusters.DeviceEnergyManagement,
         all_clusters.DeviceEnergyManagementMode,
     }
@@ -949,4 +1098,24 @@ class BatteryStorage(DeviceType, device_type=0x0018):
     clusters = {
         all_clusters.Descriptor,
         all_clusters.Identify,
+    }
+
+
+class ThermostatController(DeviceType, device_type=0x030A):
+    """Thermostat Controller."""
+
+    clusters = {
+        all_clusters.Descriptor,
+        all_clusters.Binding,
+    }
+
+
+class SoilSensor(DeviceType, device_type=0x0045):
+    """Soil Sensor."""
+
+    clusters = {
+        all_clusters.Identify,
+        all_clusters.Descriptor,
+        all_clusters.TemperatureMeasurement,
+        all_clusters.SoilMeasurement,
     }
