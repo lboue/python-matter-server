@@ -12,6 +12,7 @@ import "../components/ha-svg-icon";
 import "../pages/components/node-details";
 import { provide } from "@lit/context";
 import { bindingContext } from "./components/context";
+import { formatAttributeValue } from "../util/format_value";
 
 declare global {
   interface HTMLElementTagNameMap {
@@ -87,6 +88,12 @@ class MatterClusterView extends LitElement {
             this.endpoint,
             this.cluster
           ).map((attribute) => {
+            const attributeType =
+              clusters[this.cluster!]?.attributes[attribute.key]?.type;
+            const formattedValue = formatAttributeValue(
+              attribute.value,
+              attributeType
+            );
             return html`
               <md-list-item>
                 <div slot="headline">
@@ -96,19 +103,21 @@ class MatterClusterView extends LitElement {
                 <div slot="supporting-text">
                   AttributeId: ${attribute.key}
                   (0x00${attribute.key.toString(16)}) - Value type:
-                  ${clusters[this.cluster!]?.attributes[attribute.key]?.type ||
-                  "unknown"}
+                  ${attributeType || "unknown"}
                 </div>
                 <div slot="end">
-                  ${JSON.stringify(attribute.value).length > 20
+                  ${formattedValue.length > 20
                     ? html`<button
                         @click=${() => {
-                          this._showAttributeValue(attribute.value);
+                          this._showAttributeValue(
+                            attribute.value,
+                            attributeType
+                          );
                         }}
                       >
                         Show value
                       </button>`
-                    : JSON.stringify(attribute.value)}
+                    : formattedValue}
                 </div>
               </md-list-item>
               <md-divider />
@@ -119,10 +128,10 @@ class MatterClusterView extends LitElement {
     `;
   }
 
-  private async _showAttributeValue(value: any) {
+  private async _showAttributeValue(value: any, type?: string) {
     showAlertDialog({
       title: "Attribute value",
-      text: JSON.stringify(value),
+      text: formatAttributeValue(value, type),
     });
   }
 
